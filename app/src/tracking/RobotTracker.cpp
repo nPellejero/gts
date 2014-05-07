@@ -220,5 +220,6 @@ void RobotTracker::Activate()
 
 void RobotTracker::Deactivate()
 {
+    std::cout<<"TRACKER DEACTIVATED"<<std::endl;
     m_status = TRACKER_INACTIVE;
 }

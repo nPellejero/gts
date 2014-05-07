@@ -84,7 +84,7 @@ void TrackThread::Execute()
 
         if ( ShouldPause() || (ShouldTrack() && trackingLost) )
         {
-            m_paused = true;
+	    m_paused = true;
             emit paused( trackingLost );
         }
 
@@ -94,10 +94,10 @@ void TrackThread::Execute()
 		}
 
         if ( status.eof )
-		{
-		    break;
-		}
+	{
+		   break;
 	}
+    }
 
     emit finished();
     m_thread->quit();
@@ -192,7 +192,7 @@ void TrackThread::Stop()
     // Runs in main thread!!
     if ( m_thread && m_thread->isRunning() )
     {
-        if (!m_stop) //already stopping
+	if (!m_stop) //already stopping
         {
             assert( QThread::currentThread() != m_thread.get() );
 

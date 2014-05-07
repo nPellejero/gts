@@ -171,10 +171,11 @@ namespace CrossCorrelation
         int h2 = img2->height;
         int step2 = img2->widthStep;
         int c2 = img2->nChannels;
-
+	
+	
         // boundary checks
         bool ok = true;
-        ok &=  ( c1==c2 );
+        ok &= ( c1==c2 );
         ok &= ( x1-hww>=0 && x1+hww<w1 );
         ok &= ( y1-hwh>=0 && y1+hwh<h1 );
         ok &= ( x2-hww>=0 && x2+hww<w2 );
