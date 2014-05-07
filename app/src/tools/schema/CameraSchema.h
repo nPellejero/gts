@@ -24,7 +24,7 @@
 namespace CameraSchema
 {
     extern const KeyName schemaName;
-
+    //extern const KeyName opencvId;
     extern const KeyName uniqueIdKey;
 }
 

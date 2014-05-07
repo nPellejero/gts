@@ -84,6 +84,7 @@ public:
 
     bool SetupVideo( const char* const videoFile,
                      const char* const timestampFile,
+		     int id_cam,
                      float shutter,
                      float gain );
 

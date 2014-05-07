@@ -519,8 +519,7 @@ VideoSequence* const MingwDSCameraApi::CreateVideoSequenceForCamera( const Camer
                 // found the matching camera; now set it to the
                 // highest available resolution
                 CameraDescription::Resolution res = GetHighestResolution(mdsCameraList[n].description);
-
-                if ((res.width > 0) && (res.height > 0))
+		if ((res.width > 0) && (res.height > 0))
                 {
                     SetResolution(mdsCameraList[n].pFilter, res);
                 }

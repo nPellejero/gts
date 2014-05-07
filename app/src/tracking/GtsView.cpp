@@ -267,6 +267,7 @@ bool GtsView::SetupTracker( RobotTracker::trackerType type,
 **/
 bool GtsView::SetupVideo( const char* const videoFile,
                           const char* const timestampFile,
+			  int id_cam,
                           float shutter,
                           float gain )
 {
@@ -278,7 +279,9 @@ bool GtsView::SetupVideo( const char* const videoFile,
 
     if (f == openCvCameraPrefix)
     {
-        m_sequencer = new VideoCaptureCv(CV_CAP_ANY);
+	id_cam = 1;
+	std::cout<<"Openning camera with id =" << id_cam << std::endl;
+	m_sequencer = new VideoCaptureCv(id_cam);
 
         if (!m_sequencer->IsSetup())
         {
@@ -519,6 +522,13 @@ void GtsView::StepTracker( bool forward, CoverageSystem* coverage )
         if ( m_tracker->IsActive() )
         {
             tracking = m_tracker->Track( videoTimeStampInMillisecs );
+	    // If active but cannot find track then go to lossRecovery
+	    if(!tracking)
+	    {
+		  std::cout<<"Track goes to lost"<<std::endl;
+		  m_tracker->DoInactiveProcessing( videoTimeStampInMillisecs );
+                  m_tracker->LossRecovery();
+	    }
         }
         else
         {

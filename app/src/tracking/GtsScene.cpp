@@ -17,7 +17,7 @@
  */
 
 #include "GtsScene.h"
-
+#include "CameraSchema.h"
 #include "ScanMatch.h"
 #include "ScanUtility.h"
 #include "MathsConstants.h"
@@ -191,7 +191,10 @@ bool GtsScene::LoadCameraConfig( const KeyId               camPosId,
 
     LOG_INFO(QObject::tr("Setting up video %1.").arg(m_ln));
 
-    status = m_view[m_ln].SetupVideo( selectedVideoFileName, timestampFileName, shutter, gain );
+    //	 aca mandale el uniqueid, q lo sacas de cameraConfig::dameuniqueidputo
+    const KeyValue uniqueIdKeyValue(cameraConfig.GetKeyValue( KeyName( CameraSchema::uniqueIdKey ) ) );
+    int id_cam = uniqueIdKeyValue.ToInt() ;
+    status = m_view[m_ln].SetupVideo( selectedVideoFileName, timestampFileName, id_cam, shutter, gain );
     if ( !status )
     {
         LOG_ERROR("Video setup failed!");

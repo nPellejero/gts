@@ -179,12 +179,12 @@ namespace GroundTruthUI
                 pos = history[i].GetPosition();
                 angle = history[i].GetOrientation();
 
-                if ( tdiff > 2000.0 / 3.0 )
+                if ( tdiff > 2000.0 / 3.0 ) // draw with points if time steps are large
                 {
                     oldPosf = tracker->AdjustTrackForRobotHeight( pos, angle );
                     oldPos = cvPoint( ( int )oldPosf.x, ( int )oldPosf.y );
                 }
-                else
+                else // draw lines if time steps are small
                 {
                     newPosf = tracker->AdjustTrackForRobotHeight( pos, angle );
                     CvPoint newPos = cvPoint( ( int )newPosf.x, ( int )newPosf.y );
