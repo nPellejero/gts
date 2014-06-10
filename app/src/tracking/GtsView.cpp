@@ -496,7 +496,7 @@ void GtsView::StepTracker( bool forward, CoverageSystem* coverage )
                 m_imgFrame->width == m_imgGrey->width &&
                 m_imgFrame->height == m_imgGrey->height );
 
-        // Convert to grey-scale and flip at same time
+        // Convert to grey-scale and apply the calibration
         cvConvertImage( m_imgFrame, m_imgGrey, m_sequencer->Flip() );
         m_calScaled->UnwarpGroundPlane( m_imgGrey, m_imgWarp[m_imgIndex] );
 
