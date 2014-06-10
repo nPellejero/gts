@@ -652,13 +652,9 @@ bool KltTracker::LoadTargetImage( const char* targetFilename )
 }
 
 /**
- Predicts the appearance of the target using computed heading.
+ Predicts the appearance of the target using computed heading, taking
+ an extra parameter for specifying the position
 
- Currently just rotates the target, but could include illumination
- effects (e.g. brightness/contrast changes).
-
- Angular offset parameter allows us to test different
- orientation hypothesis.
  **/
 void KltTracker::PredictTargetAppearance( float angleInRadians, float offsetAngleDegrees )
 {
@@ -793,7 +789,8 @@ void KltTracker::TargetSearch( const IplImage* mask )
     
     CvPoint2D32f maxPos;
   
-    //Correct m_pos when lost near the limits of the window due to offsets
+    //Correct m_pos when lost near the limits of the window due to offsets.
+    //Otherwise it get in a state where ncc2 returns 0 and lossRecovery never
     float x_lost = std::min( std::max(float(ws/2), m_pos.x) , float(m_appearanceImg->width-ws/2));
     float y_lost = std::min( std::max(float(ws/2), m_pos.y) , float(m_appearanceImg->height-ws/2));
     
@@ -809,7 +806,8 @@ void KltTracker::TargetSearch( const IplImage* mask )
             pNcc += j * fStep + i;
 	    if ( *pMask )
 	    { 
-	      //Compute the heading of the robot for a given candidate position
+	      //Compute the heading of the robot for a given candidate position 
+	      // and creates a patch taking into account the orientation
 	      float newAngle = ComputeHeading(cvPoint2D32f( (float)i, (float)j ));
 	      PredictTargetAppearance2(newAngle,0,x_lost, y_lost);
 	      //Compare candidate with target appearance
