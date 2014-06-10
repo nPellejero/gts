@@ -207,7 +207,6 @@ void KltTracker::CreateWeightImage()
 
 void KltTracker::Activate()
 {
-    std::cout<<"ACTIVATING TRACKER"<<std::endl;
     // run second stage of tracker in order to determine initial orientation properly
     ReleasePyramids();
     //assert( m_currImg );
@@ -279,12 +278,12 @@ bool KltTracker::Track( double timestampInMillisecs, bool flipCorrect, bool init
     if ( found && TrackStage2( newPos, flipCorrect, false ) )
     {
         float ncc = GetError();
-
-        if ( ncc < m_nccThresh )
+	if ( ncc < m_nccThresh )
         {
-            if ( !IsLost() )
+	    if ( !IsLost() )
             {
-                LOG_WARN("Lost.");
+		
+		LOG_WARN("Lost.");
 
                 LOG_INFO(QObject::tr("NCC value: %1 (thresh %2).").arg(ncc)
                                                                   .arg(m_nccThresh));
@@ -292,7 +291,7 @@ bool KltTracker::Track( double timestampInMillisecs, bool flipCorrect, bool init
             }
             else
             {
-                LOG_WARN("Still lost.");
+		LOG_WARN("Still lost.");
 
                 SetLost(); // ttacker is still lost
             }
@@ -314,21 +313,17 @@ bool KltTracker::Track( double timestampInMillisecs, bool flipCorrect, bool init
         //assert( error >= -1.0 );
         //assert( error <= 1.0 );warp gradient magnitude at the tracked position to store in TrackEntry for later use.
         //const CvMat* w
-	std::cout << "position =" <<GetPosition().x << " , " << GetPosition().y << " heading = " << GetHeading() << std::endl;
-        m_history.emplace_back( TrackEntry( GetPosition(), GetHeading(), GetError(), timestampInMillisecs, warpGradient ) );
+	m_history.emplace_back( TrackEntry( GetPosition(), GetHeading(), GetError(), timestampInMillisecs, warpGradient ) );
 
         return true;
     }
-    std::cout << "TRACK NOT FOUND"<<std::endl;
     if ( !IsLost() )
     {
       LOG_WARN("Lost.");
-      std::cout << "LOST"<<std::endl;
       SetJustLost(); // tracker has transitioned into lost state
     }
     else
     {
-       std::cout << "STILL LOST"<<std::endl;
        LOG_WARN("Still lost.");
        SetLost(); // ttacker is still lost
     }
@@ -759,7 +754,7 @@ void KltTracker::LossRecovery()
     InitialiseRecoverySystem();
     cvAbsDiff(m_currImg, m_prevImg, m_diff);
     cvThreshold(m_diff, m_diff, 15, 255, CV_THRESH_BINARY);
-        
+          
     cvSetZero(m_filtered);
     OpenCvUtility::MotionFilter(m_diff, m_filtered, 24, 24);
     cvConvertScale(m_filtered, m_avg, 1, 0.0);
@@ -831,7 +826,6 @@ void KltTracker::TargetSearch( const IplImage* mask )
         }
     }
     cvReleaseImage( &ncc );
-    std::cout<< " MaxVal = "<< maxVal << std::endl; 
     if ( maxVal > 0.7 )
     {
         LOG_INFO(QObject::tr("Relocalised at %1 %2 (score: %3).").arg(maxPos.x)

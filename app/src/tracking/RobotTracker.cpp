@@ -205,6 +205,7 @@ bool RobotTracker::IsActive() const
 
 bool RobotTracker::IsLost() const
 {
+    
     return ( m_status == TRACKER_LOST || m_status == TRACKER_JUST_LOST );
 }
 
@@ -220,6 +221,5 @@ void RobotTracker::Activate()
 
 void RobotTracker::Deactivate()
 {
-    std::cout<<"TRACKER DEACTIVATED"<<std::endl;
     m_status = TRACKER_INACTIVE;
 }

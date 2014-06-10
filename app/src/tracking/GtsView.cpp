@@ -525,7 +525,6 @@ void GtsView::StepTracker( bool forward, CoverageSystem* coverage )
 	    // If active but cannot find track then go to lossRecovery
 	    if(!tracking)
 	    {
-		  std::cout<<"Track goes to lost"<<std::endl;
 		  m_tracker->DoInactiveProcessing( videoTimeStampInMillisecs );
                   m_tracker->LossRecovery();
 	    }

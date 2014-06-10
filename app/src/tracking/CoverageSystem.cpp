@@ -121,15 +121,15 @@ void CoverageSystem::CreateColouredMap()
 
     unsigned char colour[11][3] = { { 0, 0, 0 },
                                     { 0, 255, 255 },
-                                    { 0, 229, 255 },
                                     { 0, 204, 255 },
-                                    { 0, 178, 255 },
-                                    { 0, 153, 255 },
                                     { 0, 127, 255 },
-                                    { 0, 102, 255 },
                                     { 0, 76, 255 },
-                                    { 0, 51, 255 },
-                                    { 0, 25, 255 } };
+                                    { 0, 25, 255 },
+                                    { 255, 127, 0 },
+                                    { 255, 102, 0 },
+                                    { 255, 76, 0 },
+                                    { 255, 51, 0 },
+                                    { 255, 25, 0 } };
 
     int step = m_cvgMask->widthStep;
     for ( int r = 0; r < m_cvgMask->height; ++r )
@@ -142,7 +142,7 @@ void CoverageSystem::CreateColouredMap()
         while ( pMask != pEnd )
         {
             int index = *pMask++;
-
+	  /*
             if ( index > 8 && index <= 13 )
             {
                 index = 8;
@@ -155,7 +155,10 @@ void CoverageSystem::CreateColouredMap()
             {
                 index = 10;
             }
-
+	*/
+	  if( index > 5){
+	      index = 5;
+	  }
             *pCol++ = colour[index][0];
             *pCol++ = colour[index][1];
             *pCol++ = colour[index][2];
