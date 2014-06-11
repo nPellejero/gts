@@ -135,6 +135,22 @@ void CaptureThread::UpdateQImage()
 
         const int DONT_FLIP = 0;
         int flipFlag = DONT_FLIP;
+
+	//when recording it demosaics the image
+        if(m_videoSeq->IsLive()){
+            //Convert from 3 GRAY to GRAY
+            IplImage *im2 = cvCreateImage(cvGetSize(m_internalImage),IPL_DEPTH_8U,1);
+            cvCvtColor(m_internalImage,im2,CV_RGB2GRAY);
+
+	    //demosaic GRAY TO RGB 3 CHANNELS
+            IplImage* im3 =cvCreateImage(cvGetSize(im2),IPL_DEPTH_8U,3);
+            cvCvtColor(im2,im3,CV_BayerGB2RGB);
+            cvReleaseImage(&im2);
+            cvConvertImage( im3, &mtxWrapper, flipFlag );
+            cvReleaseImage(&im3);
+        }else{
+            cvConvertImage( m_internalImage, &mtxWrapper, flipFlag );
+        }
         cvConvertImage( m_internalImage, &mtxWrapper, flipFlag );
     }
 }
