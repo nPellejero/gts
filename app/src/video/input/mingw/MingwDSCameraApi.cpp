@@ -12,6 +12,10 @@
 #include <objidl.h>
 #include <ocidl.h>
 #include <errors.h>
+#include <string>
+#include <fstream>
+#include <iostream>
+
 
 #define WIDTHBYTES(BTIS)  ((DWORD)(((BTIS)+31) & (~31)) / 8)
 #define DIBWIDTHBYTES(BI) (DWORD)(BI).biBitCount) * (DWORD)WIDTHBYTES((DWORD)(BI).biWidth
@@ -336,7 +340,33 @@ namespace
         return propertyValue;
     }
 
-    /** @brief Fill out a list of cameras by iterating using the provided video device enumerator.
+	std::string wstr_to_str(std::wstring ws){
+		std::string str;
+		str.assign(ws.begin(),ws.end());
+		return str;
+	}
+
+	std::wstring str_to_wstr(std::string str){
+		std::wstring wstr;
+		wstr.assign(str.begin(),str.end());
+		return wstr;
+	}
+
+	std::wstring getIdFromName(std::vector<std::pair<std::string, std::string> > list_pairs, std::wstring cam_name){
+		std::string str_name = wstr_to_str(cam_name);
+		std::string id="";
+		for(int i=0;i<list_pairs.size();i++)
+		{
+			std::string curr_name = list_pairs.at(i).first;
+			if (str_name.find(curr_name) != std::string::npos){
+				id = list_pairs.at(i).second;
+				break;
+			}
+		}
+		return str_to_wstr(id);
+ 	}
+
+   /** @brief Fill out a list of cameras by iterating using the provided video device enumerator.
      *
      *  @param videoDeviceEnumerator An IEnumMoniker pointing to an device enumerator for the video device class.
      *  @param cameraList            The list to populate with cameras.
@@ -346,6 +376,19 @@ namespace
                          MingwDSCameraList& cameraList,
                          const CameraApi& mingwDSApi )
     {
+		std::ifstream infile("cameras.txt");	
+		std::string line;
+		std::vector<std::pair<std::string, std::string> > list_pairs;
+		while (std::getline(infile, line))
+		{
+			std::string str_name;
+			std::string id;
+			str_name =line.substr(0, line.find(":"));
+			id = line.substr( line.find(":")+1,line.size()-1).c_str();	
+			list_pairs.push_back(std::make_pair(str_name,id));
+		}
+
+
         IMoniker* videoDeviceMoniker;
 
         const ULONG GET_ONE = 1;
@@ -371,7 +414,10 @@ namespace
                     CameraDescription( mingwDSApi )
                     .WithName        ( GetProperty( L"FriendlyName", videoDeviceProperties ) )
                     .WithDescription ( GetProperty( L"Description",  videoDeviceProperties ) )
-                    .WithUniqueId    ( GetProperty( L"DevicePath",   videoDeviceProperties ) );
+                    .WithUniqueId    ( getIdFromName(list_pairs,GetProperty( L"FriendlyName", videoDeviceProperties ))  );
+		std::wstring name = descr.UniqueId():
+		std::string NameUniqueId;
+		NameUniqueId.assign(name.begin(), name.end());
                 videoDeviceProperties->Release();
 
                 // Try to get the IAMStreamConfig interface on the
@@ -516,6 +562,11 @@ VideoSequence* const MingwDSCameraApi::CreateVideoSequenceForCamera( const Camer
         {
             if (mdsCameraList[n].description.UniqueId() == camera.UniqueId() )
             {
+		std::string str_name2;
+		str_name2.assign(mdsCameraList[n].description.Name().begin(),
+                            mdsCameraList[n].description.Name().end());
+		std::cout <<"Camera Opened  - " << str_name2 << "  -----" << n << std::endl;
+
                 // found the matching camera; now set it to the
                 // highest available resolution
                 CameraDescription::Resolution res = GetHighestResolution(mdsCameraList[n].description);
@@ -528,8 +579,12 @@ VideoSequence* const MingwDSCameraApi::CreateVideoSequenceForCamera( const Camer
 
                 break;
             }
+	    std::string str_name;
+	    str_name.assign(mdsCameraList[n].description.Name().begin(), mdsCameraList[n].description.Name().end());
+            std::cout << str_name << "  -----" << n << std::endl;
         }
 
+	std::cout << std::endl;
         ResetComLibrary();
     }
     return vs;
