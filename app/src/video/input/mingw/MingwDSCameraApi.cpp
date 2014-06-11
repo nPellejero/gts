@@ -415,7 +415,7 @@ namespace
                     .WithName        ( GetProperty( L"FriendlyName", videoDeviceProperties ) )
                     .WithDescription ( GetProperty( L"Description",  videoDeviceProperties ) )
                     .WithUniqueId    ( getIdFromName(list_pairs,GetProperty( L"FriendlyName", videoDeviceProperties ))  );
-		std::wstring name = descr.UniqueId():
+		std::wstring name = descr.UniqueId();
 		std::string NameUniqueId;
 		NameUniqueId.assign(name.begin(), name.end());
                 videoDeviceProperties->Release();
