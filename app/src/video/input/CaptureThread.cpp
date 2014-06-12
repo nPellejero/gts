@@ -151,7 +151,7 @@ void CaptureThread::UpdateQImage()
         }else{
             cvConvertImage( m_internalImage, &mtxWrapper, flipFlag );
         }
-        cvConvertImage( m_internalImage, &mtxWrapper, flipFlag );
+        //cvConvertImage( m_internalImage, &mtxWrapper, flipFlag );
     }
 }
 
