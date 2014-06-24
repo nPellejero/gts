@@ -1,0 +1,2216 @@
+TRACE - Application starting...
+INFO - Version: 0.4.91 Date: 20/03/2014.
+TRACE - Track Load
+INFO - Getting camera parameters 0.
+INFO - Configuring camera 0.
+INFO - Tracking param - biLevel: 128.
+INFO - Tracking param - ncc: 0.6.
+INFO - Tracking param - resolution: 15.
+INFO - Computed metrics:
+INFO -  - calibration square size: 15 px;
+INFO -  - robot radius: 16.3043 px;
+INFO -  - robot base: 22.4348 px;
+INFO -  - scale factor: 1.30435.
+INFO - Image dimensions (WxH): 1280,960
+INFO - Camera matrix:
+INFO - [0,0] = 619.701
+INFO - [0,1] = 0
+INFO - [0,2] = 577.633
+INFO - [1,0] = 0
+INFO - [1,1] = 620.378
+INFO - [1,2] = 510.458
+INFO - [2,0] = 0
+INFO - [2,1] = 0
+INFO - [2,2] = 1
+INFO - Distortion coefficients:
+INFO - [0,0] = -0.278064
+INFO - [0,1] = 0.0989647
+INFO - [0,2] = 0
+INFO - [0,3] = 0
+INFO - [0,4] = -0.0182482
+INFO - Inverse coefficients:
+INFO - [0,0] = 0.281789
+INFO - [0,1] = 0.131895
+INFO - [0,2] = 3.61939e-05
+INFO - [0,3] = 1.61642e-05
+INFO - [0,4] = 0.0351414
+INFO - Image dimensions (WxH): 1280,960
+INFO - Camera matrix:
+INFO - [0,0] = 619.701
+INFO - [0,1] = 0
+INFO - [0,2] = 577.633
+INFO - [1,0] = 0
+INFO - [1,1] = 620.378
+INFO - [1,2] = 510.458
+INFO - [2,0] = 0
+INFO - [2,1] = 0
+INFO - [2,2] = 1
+INFO - Distortion coefficients:
+INFO - [0,0] = -0.278064
+INFO - [0,1] = 0.0989647
+INFO - [0,2] = 0
+INFO - [0,3] = 0
+INFO - [0,4] = -0.0182482
+INFO - Inverse coefficients:
+INFO - [0,0] = 0.281789
+INFO - [0,1] = 0.131895
+INFO - [0,2] = 3.61939e-05
+INFO - [0,3] = 1.61642e-05
+INFO - [0,4] = 0.0351414
+INFO - Board size: 8,5.
+INFO - Opened calibration image: C:/gts_workbench_and_tools_0.4.7/Test_Workbench3/cameraPositions/cameraPosition1/calibrationImage/pos.bmp.
+INFO - Found 40/40 calibration corners.
+TRACE - Computing extrinsic params
+INFO - Object points:
+INFO - [0,0] = 60
+INFO - [0,1] = 0
+INFO - [0,2] = 0
+INFO - [0,3] = 60
+INFO - [0,4] = 15
+INFO - [0,5] = 0
+INFO - [0,6] = 60
+INFO - [0,7] = 30
+INFO - [0,8] = 0
+INFO - [0,9] = 60
+INFO - [0,10] = 45
+INFO - [0,11] = 0
+INFO - [0,12] = 60
+INFO - [0,13] = 60
+INFO - [0,14] = 0
+INFO - [0,15] = 60
+INFO - [0,16] = 75
+INFO - [0,17] = 0
+INFO - [0,18] = 60
+INFO - [0,19] = 90
+INFO - [0,20] = 0
+INFO - [0,21] = 60
+INFO - [0,22] = 105
+INFO - [0,23] = 0
+INFO - [0,24] = 45
+INFO - [0,25] = 0
+INFO - [0,26] = 0
+INFO - [0,27] = 45
+INFO - [0,28] = 15
+INFO - [0,29] = 0
+INFO - [0,30] = 45
+INFO - [0,31] = 30
+INFO - [0,32] = 0
+INFO - [0,33] = 45
+INFO - [0,34] = 45
+INFO - [0,35] = 0
+INFO - [0,36] = 45
+INFO - [0,37] = 60
+INFO - [0,38] = 0
+INFO - [0,39] = 45
+INFO - Image points:
+INFO - [0,0] = 685.492
+INFO - [0,1] = 561.814
+INFO - [0,2] = 657.339
+INFO - [0,3] = 562.473
+INFO - [0,4] = 628.701
+INFO - [0,5] = 562.8
+INFO - [0,6] = 600.221
+INFO - [0,7] = 563.343
+INFO - [0,8] = 571.268
+INFO - [0,9] = 563.673
+INFO - [0,10] = 542.694
+INFO - [0,11] = 563.741
+INFO - [0,12] = 513.596
+INFO - [0,13] = 564.133
+INFO - [0,14] = 485.417
+INFO - [0,15] = 564.205
+INFO - [0,16] = 685.411
+INFO - [0,17] = 533.403
+INFO - [0,18] = 656.944
+INFO - [0,19] = 533.678
+INFO - [0,20] = 628.636
+INFO - [0,21] = 534.08
+INFO - [0,22] = 599.684
+INFO - [0,23] = 534.423
+INFO - [0,24] = 571.152
+INFO - [0,25] = 534.702
+INFO - [0,26] = 542.217
+INFO - [0,27] = 535.41
+INFO - [0,28] = 513.4
+INFO - [0,29] = 535.464
+INFO - [0,30] = 484.968
+INFO - [0,31] = 535.718
+INFO - [0,32] = 684.988
+INFO - [0,33] = 504.616
+INFO - [0,34] = 656.831
+INFO - [0,35] = 504.936
+INFO - [0,36] = 628.202
+INFO - [0,37] = 505.353
+INFO - [0,38] = 599.435
+INFO - [0,39] = 505.705
+INFO - Camera rotation:
+INFO - [0,0] = 0.0116016
+INFO - [0,1] = -0.999932
+INFO - [0,2] = -0.00072388
+INFO - [1,0] = 0.999931
+INFO - [1,1] = 0.0116027
+INFO - [1,2] = -0.00157093
+INFO - [2,0] = 0.00157923
+INFO - [2,1] = -0.000705605
+INFO - [2,2] = 0.999999
+INFO - Camera translation:
+INFO - [0,0] = 56.0042
+INFO - [1,0] = -33.0181
+INFO - [2,0] = 322.1
+TRACE - Computing warp
+TRACE - Extracting homography
+TRACE - Inverting projection
+TRACE - Computing bounding box
+INFO - Computing warp map (size=708x871) (706.075x871.031).
+TRACE - Warping ground plane image
+INFO - Camera Position: 24.424 43.4016 -246.952.
+INFO - Opened calibration image: C:/gts_workbench_and_tools_0.4.7/Test_Workbench3/cameraPositions/cameraPosition1/calibrationImage/pos.bmp.
+INFO - Found 40/40 calibration corners.
+TRACE - Computing extrinsic params
+INFO - Object points:
+INFO - [0,0] = 46
+INFO - [0,1] = 0
+INFO - [0,2] = 0
+INFO - [0,3] = 46
+INFO - [0,4] = 11.5
+INFO - [0,5] = 0
+INFO - [0,6] = 46
+INFO - [0,7] = 23
+INFO - [0,8] = 0
+INFO - [0,9] = 46
+INFO - [0,10] = 34.5
+INFO - [0,11] = 0
+INFO - [0,12] = 46
+INFO - [0,13] = 46
+INFO - [0,14] = 0
+INFO - [0,15] = 46
+INFO - [0,16] = 57.5
+INFO - [0,17] = 0
+INFO - [0,18] = 46
+INFO - [0,19] = 69
+INFO - [0,20] = 0
+INFO - [0,21] = 46
+INFO - [0,22] = 80.5
+INFO - [0,23] = 0
+INFO - [0,24] = 34.5
+INFO - [0,25] = 0
+INFO - [0,26] = 0
+INFO - [0,27] = 34.5
+INFO - [0,28] = 11.5
+INFO - [0,29] = 0
+INFO - [0,30] = 34.5
+INFO - [0,31] = 23
+INFO - [0,32] = 0
+INFO - [0,33] = 34.5
+INFO - [0,34] = 34.5
+INFO - [0,35] = 0
+INFO - [0,36] = 34.5
+INFO - [0,37] = 46
+INFO - [0,38] = 0
+INFO - [0,39] = 34.5
+INFO - Image points:
+INFO - [0,0] = 685.492
+INFO - [0,1] = 561.814
+INFO - [0,2] = 657.339
+INFO - [0,3] = 562.473
+INFO - [0,4] = 628.701
+INFO - [0,5] = 562.8
+INFO - [0,6] = 600.221
+INFO - [0,7] = 563.343
+INFO - [0,8] = 571.268
+INFO - [0,9] = 563.673
+INFO - [0,10] = 542.694
+INFO - [0,11] = 563.741
+INFO - [0,12] = 513.596
+INFO - [0,13] = 564.133
+INFO - [0,14] = 485.417
+INFO - [0,15] = 564.205
+INFO - [0,16] = 685.411
+INFO - [0,17] = 533.403
+INFO - [0,18] = 656.944
+INFO - [0,19] = 533.678
+INFO - [0,20] = 628.636
+INFO - [0,21] = 534.08
+INFO - [0,22] = 599.684
+INFO - [0,23] = 534.423
+INFO - [0,24] = 571.152
+INFO - [0,25] = 534.702
+INFO - [0,26] = 542.217
+INFO - [0,27] = 535.41
+INFO - [0,28] = 513.4
+INFO - [0,29] = 535.464
+INFO - [0,30] = 484.968
+INFO - [0,31] = 535.718
+INFO - [0,32] = 684.988
+INFO - [0,33] = 504.616
+INFO - [0,34] = 656.831
+INFO - [0,35] = 504.936
+INFO - [0,36] = 628.202
+INFO - [0,37] = 505.353
+INFO - [0,38] = 599.435
+INFO - [0,39] = 505.705
+INFO - Camera rotation:
+INFO - [0,0] = 0.0116016
+INFO - [0,1] = -0.999932
+INFO - [0,2] = -0.00072388
+INFO - [1,0] = 0.999931
+INFO - [1,1] = 0.0116027
+INFO - [1,2] = -0.00157093
+INFO - [2,0] = 0.00157923
+INFO - [2,1] = -0.000705605
+INFO - [2,2] = 0.999999
+INFO - Camera translation:
+INFO - [0,0] = 42.9365
+INFO - [1,0] = -25.3139
+INFO - [2,0] = 246.944
+TRACE - Computing warp
+TRACE - Extracting homography
+TRACE - Inverting projection
+TRACE - Computing bounding box
+INFO - Computing warp map (size=592x714) (587.991x714.457).
+TRACE - Warping ground plane image
+INFO - Camera Position: 18.7251 33.2746 -189.33.
+INFO - Camera position id: cameraPosition1
+INFO - Camera transform:
+INFO - [0,0] = 1
+INFO - [0,1] = 0
+INFO - [0,2] = 0
+INFO - [1,0] = 0
+INFO - [1,1] = 1
+INFO - [1,2] = 0
+INFO - [2,0] = 0
+INFO - [2,1] = 0
+INFO - [2,2] = 1
+INFO - With offsets:
+INFO - [0,0] = 1
+INFO - [0,1] = 0
+INFO - [0,2] = 0
+INFO - [1,0] = 0
+INFO - [1,1] = 1
+INFO - [1,2] = 0
+INFO - [2,0] = 0
+INFO - [2,1] = 0
+INFO - [2,2] = 1
+INFO - Configuring tracker 0.
+TRACE - Creating target tracker
+INFO - Bi-level threshold: 128.
+INFO - Opened target image: C:/gts_workbench_and_tools_0.4.7/Test_Workbench3/targets/target1/target2.png.
+INFO - Setting up video 0.
+INFO - Loading video from file: C:/gts_workbench_and_tools_0.4.7/Test_Workbench3/runs/run10/capturedVideos/video40.avi.
+INFO - Done.
+INFO - Getting camera parameters 1.
+INFO - Configuring camera 1.
+INFO - Tracking param - biLevel: 128.
+INFO - Tracking param - ncc: 0.6.
+INFO - Tracking param - resolution: 15.
+INFO - Computed metrics:
+INFO -  - calibration square size: 15 px;
+INFO -  - robot radius: 16.3043 px;
+INFO -  - robot base: 22.4348 px;
+INFO -  - scale factor: 1.30435.
+INFO - Image dimensions (WxH): 1280,960
+INFO - Camera matrix:
+INFO - [0,0] = 620.572
+INFO - [0,1] = 0
+INFO - [0,2] = 635.886
+INFO - [1,0] = 0
+INFO - [1,1] = 621.439
+INFO - [1,2] = 526.966
+INFO - [2,0] = 0
+INFO - [2,1] = 0
+INFO - [2,2] = 1
+INFO - Distortion coefficients:
+INFO - [0,0] = -0.268794
+INFO - [0,1] = 0.0877916
+INFO - [0,2] = 0
+INFO - [0,3] = 0
+INFO - [0,4] = -0.0141212
+INFO - Inverse coefficients:
+INFO - [0,0] = 0.267989
+INFO - [0,1] = 0.149996
+INFO - [0,2] = -9.05708e-05
+INFO - [0,3] = 3.62093e-06
+INFO - [0,4] = 0.0192725
+INFO - Image dimensions (WxH): 1280,960
+INFO - Camera matrix:
+INFO - [0,0] = 620.572
+INFO - [0,1] = 0
+INFO - [0,2] = 635.886
+INFO - [1,0] = 0
+INFO - [1,1] = 621.439
+INFO - [1,2] = 526.966
+INFO - [2,0] = 0
+INFO - [2,1] = 0
+INFO - [2,2] = 1
+INFO - Distortion coefficients:
+INFO - [0,0] = -0.268794
+INFO - [0,1] = 0.0877916
+INFO - [0,2] = 0
+INFO - [0,3] = 0
+INFO - [0,4] = -0.0141212
+INFO - Inverse coefficients:
+INFO - [0,0] = 0.267989
+INFO - [0,1] = 0.149996
+INFO - [0,2] = -9.05708e-05
+INFO - [0,3] = 3.62093e-06
+INFO - [0,4] = 0.0192725
+INFO - Board size: 8,5.
+INFO - Opened calibration image: C:/gts_workbench_and_tools_0.4.7/Test_Workbench3/cameraPositions/cameraPosition2/calibrationImage/pos.bmp.
+INFO - Found 40/40 calibration corners.
+TRACE - Computing extrinsic params
+INFO - Object points:
+INFO - [0,0] = 60
+INFO - [0,1] = 0
+INFO - [0,2] = 0
+INFO - [0,3] = 60
+INFO - [0,4] = 15
+INFO - [0,5] = 0
+INFO - [0,6] = 60
+INFO - [0,7] = 30
+INFO - [0,8] = 0
+INFO - [0,9] = 60
+INFO - [0,10] = 45
+INFO - [0,11] = 0
+INFO - [0,12] = 60
+INFO - [0,13] = 60
+INFO - [0,14] = 0
+INFO - [0,15] = 60
+INFO - [0,16] = 75
+INFO - [0,17] = 0
+INFO - [0,18] = 60
+INFO - [0,19] = 90
+INFO - [0,20] = 0
+INFO - [0,21] = 60
+INFO - [0,22] = 105
+INFO - [0,23] = 0
+INFO - [0,24] = 45
+INFO - [0,25] = 0
+INFO - [0,26] = 0
+INFO - [0,27] = 45
+INFO - [0,28] = 15
+INFO - [0,29] = 0
+INFO - [0,30] = 45
+INFO - [0,31] = 30
+INFO - [0,32] = 0
+INFO - [0,33] = 45
+INFO - [0,34] = 45
+INFO - [0,35] = 0
+INFO - [0,36] = 45
+INFO - [0,37] = 60
+INFO - [0,38] = 0
+INFO - [0,39] = 45
+INFO - Image points:
+INFO - [0,0] = 737.403
+INFO - [0,1] = 576.24
+INFO - [0,2] = 709.291
+INFO - [0,3] = 576.361
+INFO - [0,4] = 680.737
+INFO - [0,5] = 576.41
+INFO - [0,6] = 652.158
+INFO - [0,7] = 576.351
+INFO - [0,8] = 623.218
+INFO - [0,9] = 576.368
+INFO - [0,10] = 594.597
+INFO - [0,11] = 576.201
+INFO - [0,12] = 565.806
+INFO - [0,13] = 576.072
+INFO - [0,14] = 537.51
+INFO - [0,15] = 575.83
+INFO - [0,16] = 737.752
+INFO - [0,17] = 547.73
+INFO - [0,18] = 709.417
+INFO - [0,19] = 547.719
+INFO - [0,20] = 680.939
+INFO - [0,21] = 547.694
+INFO - [0,22] = 652.285
+INFO - [0,23] = 547.729
+INFO - [0,24] = 623.34
+INFO - [0,25] = 547.644
+INFO - [0,26] = 594.614
+INFO - [0,27] = 547.622
+INFO - [0,28] = 565.822
+INFO - [0,29] = 547.508
+INFO - [0,30] = 537.473
+INFO - [0,31] = 547.431
+INFO - [0,32] = 737.975
+INFO - [0,33] = 519.209
+INFO - [0,34] = 709.528
+INFO - [0,35] = 518.97
+INFO - [0,36] = 681.032
+INFO - [0,37] = 518.912
+INFO - [0,38] = 652.421
+INFO - [0,39] = 518.782
+INFO - Camera rotation:
+INFO - [0,0] = -0.00261058
+INFO - [0,1] = -0.999986
+INFO - [0,2] = -0.00458696
+INFO - [1,0] = 0.999997
+INFO - [1,1] = -0.00260948
+INFO - [1,2] = -0.00024634
+INFO - [2,0] = 0.000234367
+INFO - [2,1] = -0.00458759
+INFO - [2,2] = 0.999989
+INFO - Camera translation:
+INFO - [0,0] = 53.6077
+INFO - [1,0] = -34.0926
+INFO - [2,0] = 323.219
+TRACE - Computing warp
+TRACE - Extracting homography
+TRACE - Inverting projection
+TRACE - Computing bounding box
+INFO - Computing warp map (size=704x868) (701.308x867.537).
+TRACE - Warping ground plane image
+INFO - Camera Position: 26.1868 42.1673 -247.617.
+INFO - Opened calibration image: C:/gts_workbench_and_tools_0.4.7/Test_Workbench3/cameraPositions/cameraPosition2/calibrationImage/pos.bmp.
+INFO - Found 40/40 calibration corners.
+TRACE - Computing extrinsic params
+INFO - Object points:
+INFO - [0,0] = 46
+INFO - [0,1] = 0
+INFO - [0,2] = 0
+INFO - [0,3] = 46
+INFO - [0,4] = 11.5
+INFO - [0,5] = 0
+INFO - [0,6] = 46
+INFO - [0,7] = 23
+INFO - [0,8] = 0
+INFO - [0,9] = 46
+INFO - [0,10] = 34.5
+INFO - [0,11] = 0
+INFO - [0,12] = 46
+INFO - [0,13] = 46
+INFO - [0,14] = 0
+INFO - [0,15] = 46
+INFO - [0,16] = 57.5
+INFO - [0,17] = 0
+INFO - [0,18] = 46
+INFO - [0,19] = 69
+INFO - [0,20] = 0
+INFO - [0,21] = 46
+INFO - [0,22] = 80.5
+INFO - [0,23] = 0
+INFO - [0,24] = 34.5
+INFO - [0,25] = 0
+INFO - [0,26] = 0
+INFO - [0,27] = 34.5
+INFO - [0,28] = 11.5
+INFO - [0,29] = 0
+INFO - [0,30] = 34.5
+INFO - [0,31] = 23
+INFO - [0,32] = 0
+INFO - [0,33] = 34.5
+INFO - [0,34] = 34.5
+INFO - [0,35] = 0
+INFO - [0,36] = 34.5
+INFO - [0,37] = 46
+INFO - [0,38] = 0
+INFO - [0,39] = 34.5
+INFO - Image points:
+INFO - [0,0] = 737.403
+INFO - [0,1] = 576.24
+INFO - [0,2] = 709.291
+INFO - [0,3] = 576.361
+INFO - [0,4] = 680.737
+INFO - [0,5] = 576.41
+INFO - [0,6] = 652.158
+INFO - [0,7] = 576.351
+INFO - [0,8] = 623.218
+INFO - [0,9] = 576.368
+INFO - [0,10] = 594.597
+INFO - [0,11] = 576.201
+INFO - [0,12] = 565.806
+INFO - [0,13] = 576.072
+INFO - [0,14] = 537.51
+INFO - [0,15] = 575.83
+INFO - [0,16] = 737.752
+INFO - [0,17] = 547.73
+INFO - [0,18] = 709.417
+INFO - [0,19] = 547.719
+INFO - [0,20] = 680.939
+INFO - [0,21] = 547.694
+INFO - [0,22] = 652.285
+INFO - [0,23] = 547.729
+INFO - [0,24] = 623.34
+INFO - [0,25] = 547.644
+INFO - [0,26] = 594.614
+INFO - [0,27] = 547.622
+INFO - [0,28] = 565.822
+INFO - [0,29] = 547.508
+INFO - [0,30] = 537.473
+INFO - [0,31] = 547.431
+INFO - [0,32] = 737.975
+INFO - [0,33] = 519.209
+INFO - [0,34] = 709.528
+INFO - [0,35] = 518.97
+INFO - [0,36] = 681.032
+INFO - [0,37] = 518.912
+INFO - [0,38] = 652.421
+INFO - [0,39] = 518.782
+INFO - Camera rotation:
+INFO - [0,0] = -0.00261058
+INFO - [0,1] = -0.999986
+INFO - [0,2] = -0.00458696
+INFO - [1,0] = 0.999997
+INFO - [1,1] = -0.00260948
+INFO - [1,2] = -0.00024634
+INFO - [2,0] = 0.000234367
+INFO - [2,1] = -0.00458759
+INFO - [2,2] = 0.999989
+INFO - Camera translation:
+INFO - [0,0] = 41.0992
+INFO - [1,0] = -26.1377
+INFO - [2,0] = 247.801
+TRACE - Computing warp
+TRACE - Extracting homography
+TRACE - Inverting projection
+TRACE - Computing bounding box
+INFO - Computing warp map (size=588x712) (584.336x711.779).
+TRACE - Warping ground plane image
+INFO - Camera Position: 20.0765 32.3282 -189.839.
+INFO - Camera position id: cameraPosition2
+INFO - Camera transform:
+INFO - [0,0] = 1.04572
+INFO - [0,1] = -0.00277275
+INFO - [0,2] = 198.327
+INFO - [1,0] = 0.0412279
+INFO - [1,1] = 1.03436
+INFO - [1,2] = 8.2442
+INFO - [2,0] = 7.22472e-05
+INFO - [2,1] = 3.36006e-05
+INFO - [2,2] = 1
+INFO - With offsets:
+INFO - [0,0] = 1.04572
+INFO - [0,1] = -0.00277275
+INFO - [0,2] = 198.327
+INFO - [1,0] = 0.0412279
+INFO - [1,1] = 1.03436
+INFO - [1,2] = 8.2442
+INFO - [2,0] = 7.22472e-05
+INFO - [2,1] = 3.36006e-05
+INFO - [2,2] = 1
+INFO - Configuring tracker 1.
+TRACE - Creating target tracker
+INFO - Bi-level threshold: 128.
+INFO - Opened target image: C:/gts_workbench_and_tools_0.4.7/Test_Workbench3/targets/target1/target2.png.
+INFO - Setting up video 1.
+INFO - Loading video from file: C:/gts_workbench_and_tools_0.4.7/Test_Workbench3/runs/run10/capturedVideos/video41.avi.
+INFO - Done.
+WARN - Lost.
+INFO - NCC value: 0.223078 (thresh 0.6).
+INFO - Failed to relocalise - max at 672 244 (score: 0.493265).
+INFO - Failed to relocalise - max at 670 246 (score: 0.54557).
+INFO - Failed to relocalise - max at 672 248 (score: 0.503927).
+INFO - Failed to relocalise - max at 670 250 (score: 0.555806).
+INFO - Failed to relocalise - max at 670 250 (score: 0.524635).
+INFO - Failed to relocalise - max at 670 252 (score: 0.533005).
+INFO - Failed to relocalise - max at 670 254 (score: 0.527755).
+INFO - Failed to relocalise - max at 676 214 (score: 0.346203).
+INFO - Failed to relocalise - max at 668 256 (score: 0.507644).
+INFO - Failed to relocalise - max at 674 218 (score: 0.51959).
+INFO - Failed to relocalise - max at 674 220 (score: 0.515384).
+INFO - Failed to relocalise - max at 674 220 (score: 0.524136).
+INFO - Failed to relocalise - max at 674 222 (score: 0.530043).
+INFO - Failed to relocalise - max at 674 224 (score: 0.508918).
+INFO - Failed to relocalise - max at 674 226 (score: 0.476156).
+INFO - Failed to relocalise - max at 674 228 (score: 0.457732).
+INFO - Failed to relocalise - max at 674 228 (score: 0.459002).
+INFO - Failed to relocalise - max at 672 230 (score: 0.474346).
+INFO - Failed to relocalise - max at 674 234 (score: 0.263624).
+INFO - Failed to relocalise - max at 674 238 (score: 0.367771).
+INFO - Failed to relocalise - max at 672 240 (score: 0.448835).
+INFO - Failed to relocalise - max at 672 242 (score: 0.533029).
+INFO - Failed to relocalise - max at 670 246 (score: 0.55404).
+INFO - Failed to relocalise - max at 670 246 (score: 0.559878).
+INFO - Failed to relocalise - max at 670 250 (score: 0.516386).
+INFO - Failed to relocalise - max at 668 252 (score: 0.467662).
+INFO - Failed to relocalise - max at 668 256 (score: 0.400498).
+INFO - Failed to relocalise - max at 664 238 (score: 0.546577).
+INFO - Failed to relocalise - max at 662 246 (score: 0.582897).
+INFO - Failed to relocalise - max at 664 250 (score: 0.552493).
+INFO - Failed to relocalise - max at 664 256 (score: 0.552656).
+INFO - Failed to relocalise - max at 662 264 (score: 0.523981).
+INFO - Failed to relocalise - max at 664 268 (score: 0.424947).
+INFO - Failed to relocalise - max at 664 276 (score: 0.336426).
+INFO - Failed to relocalise - max at 664 322 (score: 0.310884).
+INFO - Failed to relocalise - max at 664 324 (score: 0.292514).
+INFO - Failed to relocalise - max at 662 332 (score: 0.292972).
+INFO - Failed to relocalise - max at 662 334 (score: 0.293457).
+INFO - Failed to relocalise - max at 660 340 (score: 0.267858).
+INFO - Failed to relocalise - max at 668 306 (score: 0.2214).
+INFO - Failed to relocalise - max at 666 312 (score: 0.191678).
+INFO - Failed to relocalise - max at 666 318 (score: 0.226814).
+INFO - Failed to relocalise - max at 664 324 (score: 0.199625).
+INFO - Failed to relocalise - max at 664 328 (score: 0.246685).
+INFO - Failed to relocalise - max at 662 334 (score: 0.21912).
+INFO - Failed to relocalise - max at 660 340 (score: 0.185322).
+WARN - Lost.
+INFO - NCC value: 0.456647 (thresh 0.6).
+INFO - Failed to relocalise - max at 422 334 (score: 0.494054).
+INFO - Failed to relocalise - max at 424 336 (score: 0.476068).
+INFO - Relocalised at 442 350 (score: 0.707118).
+WARN - Lost.
+INFO - NCC value: 0.452206 (thresh 0.6).
+INFO - Failed to relocalise - max at 424 334 (score: 0.431883).
+INFO - Failed to relocalise - max at 428 342 (score: 0.355234).
+INFO - Failed to relocalise - max at 446 344 (score: 0.306434).
+INFO - Relocalised at 440 342 (score: 0.709598).
+WARN - Lost.
+INFO - NCC value: 0.448816 (thresh 0.6).
+INFO - Failed to relocalise - max at 424 332 (score: 0.417954).
+INFO - Failed to relocalise - max at 424 334 (score: 0.399632).
+INFO - Failed to relocalise - max at 442 350 (score: 0.514712).
+INFO - Failed to relocalise - max at 436 352 (score: 0.644982).
+INFO - Failed to relocalise - max at 438 348 (score: 0.358502).
+INFO - Failed to relocalise - max at 438 348 (score: 0.470571).
+INFO - Failed to relocalise - max at 438 348 (score: 0.354795).
+INFO - Failed to relocalise - max at 440 348 (score: 0.381777).
+INFO - Failed to relocalise - max at 444 352 (score: 0.362515).
+INFO - Failed to relocalise - max at 448 354 (score: 0.417147).
+INFO - Failed to relocalise - max at 432 354 (score: 0.379919).
+INFO - Failed to relocalise - max at 448 348 (score: 0.328168).
+INFO - Failed to relocalise - max at 430 348 (score: 0.55177).
+INFO - Failed to relocalise - max at 428 350 (score: 0.551152).
+INFO - Failed to relocalise - max at 426 348 (score: 0.575863).
+INFO - Failed to relocalise - max at 426 348 (score: 0.574318).
+INFO - Failed to relocalise - max at 442 356 (score: 0.433486).
+INFO - Failed to relocalise - max at 428 346 (score: 0.639714).
+INFO - Failed to relocalise - max at 426 346 (score: 0.671466).
+INFO - Failed to relocalise - max at 424 346 (score: 0.679829).
+INFO - Failed to relocalise - max at 424 346 (score: 0.631531).
+INFO - Failed to relocalise - max at 426 346 (score: 0.647462).
+INFO - Failed to relocalise - max at 428 344 (score: 0.677382).
+INFO - Failed to relocalise - max at 650 382 (score: -0.0274222).
+INFO - Failed to relocalise - max at 424 342 (score: 0.673729).
+INFO - Failed to relocalise - max at 654 386 (score: 0.259026).
+INFO - Failed to relocalise - max at 422 340 (score: 0.66736).
+INFO - Failed to relocalise - max at 654 382 (score: 0.234773).
+INFO - Failed to relocalise - max at 418 338 (score: 0.686074).
+INFO - Failed to relocalise - max at 656 372 (score: 0.174081).
+INFO - Failed to relocalise - max at 414 336 (score: 0.697806).
+INFO - Failed to relocalise - max at 416 334 (score: 0.588922).
+INFO - Failed to relocalise - max at 654 362 (score: 0.0851602).
+INFO - Failed to relocalise - max at 418 332 (score: 0.689634).
+INFO - Failed to relocalise - max at 656 358 (score: 0.138537).
+INFO - Failed to relocalise - max at 416 326 (score: 0.675105).
+INFO - Failed to relocalise - max at 656 354 (score: 0.136862).
+INFO - Failed to relocalise - max at 416 322 (score: 0.694523).
+INFO - Failed to relocalise - max at 656 348 (score: 0.128417).
+INFO - Failed to relocalise - max at 416 318 (score: 0.681699).
+INFO - Failed to relocalise - max at 654 344 (score: 0.154715).
+INFO - Failed to relocalise - max at 414 314 (score: 0.699722).
+INFO - Failed to relocalise - max at 652 340 (score: 0.234445).
+INFO - Relocalised at 414 310 (score: 0.700876).
+INFO - Failed to relocalise - max at 654 380 (score: 0.306969).
+INFO - Failed to relocalise - max at 652 330 (score: 0.342138).
+INFO - Failed to relocalise - max at 652 324 (score: 0.403751).
+INFO - Failed to relocalise - max at 650 320 (score: 0.476927).
+INFO - Failed to relocalise - max at 654 312 (score: 0.525091).
+INFO - Failed to relocalise - max at 652 306 (score: 0.542921).
+INFO - Failed to relocalise - max at 656 298 (score: 0.532639).
+INFO - Failed to relocalise - max at 654 294 (score: 0.560464).
+INFO - Failed to relocalise - max at 656 286 (score: 0.52277).
+INFO - Failed to relocalise - max at 652 282 (score: 0.57103).
+INFO - Failed to relocalise - max at 652 276 (score: 0.543329).
+INFO - Failed to relocalise - max at 656 310 (score: 0.559934).
+INFO - Failed to relocalise - max at 656 306 (score: 0.574284).
+INFO - Failed to relocalise - max at 656 304 (score: 0.588505).
+INFO - Failed to relocalise - max at 658 300 (score: 0.617889).
+INFO - Failed to relocalise - max at 658 296 (score: 0.63575).
+INFO - Failed to relocalise - max at 660 270 (score: 0.608605).
+INFO - Failed to relocalise - max at 660 272 (score: 0.57739).
+INFO - Failed to relocalise - max at 660 272 (score: 0.569873).
+INFO - Failed to relocalise - max at 658 274 (score: 0.5684).
+INFO - Failed to relocalise - max at 656 274 (score: 0.598385).
+INFO - Failed to relocalise - max at 654 276 (score: 0.612925).
+INFO - Failed to relocalise - max at 652 280 (score: 0.624299).
+INFO - Failed to relocalise - max at 650 282 (score: 0.619984).
+INFO - Relocalised at 652 280 (score: 0.769346).
+WARN - Lost.
+INFO - NCC value: 0.521661 (thresh 0.6).
+INFO - Relocalised at 648 288 (score: 0.703099).
+WARN - Lost.
+INFO - NCC value: 0.530622 (thresh 0.6).
+INFO - Relocalised at 648 294 (score: 0.753964).
+WARN - Lost.
+INFO - NCC value: 0.456079 (thresh 0.6).
+INFO - Failed to relocalise - max at 634 302 (score: 0.594166).
+INFO - Failed to relocalise - max at 648 344 (score: 0.609163).
+INFO - Failed to relocalise - max at 646 348 (score: 0.637028).
+INFO - Failed to relocalise - max at 646 354 (score: 0.657746).
+INFO - Failed to relocalise - max at 646 358 (score: 0.68101).
+INFO - Failed to relocalise - max at 646 364 (score: 0.669843).
+INFO - Failed to relocalise - max at 644 368 (score: 0.660249).
+INFO - Failed to relocalise - max at 644 370 (score: 0.649688).
+INFO - Failed to relocalise - max at 644 374 (score: 0.631157).
+INFO - Failed to relocalise - max at 644 376 (score: 0.632333).
+INFO - Failed to relocalise - max at 644 380 (score: 0.613945).
+INFO - Failed to relocalise - max at 644 382 (score: 0.596791).
+INFO - Failed to relocalise - max at 640 350 (score: 0.58809).
+INFO - Failed to relocalise - max at 642 354 (score: 0.584312).
+INFO - Failed to relocalise - max at 642 356 (score: 0.607826).
+INFO - Failed to relocalise - max at 642 360 (score: 0.610973).
+INFO - Failed to relocalise - max at 644 362 (score: 0.615099).
+INFO - Failed to relocalise - max at 644 364 (score: 0.604053).
+INFO - Failed to relocalise - max at 644 362 (score: 0.604108).
+INFO - Failed to relocalise - max at 644 360 (score: 0.597184).
+INFO - Failed to relocalise - max at 644 358 (score: 0.595344).
+INFO - Failed to relocalise - max at 644 372 (score: 0.58098).
+INFO - Failed to relocalise - max at 644 370 (score: 0.548606).
+INFO - Failed to relocalise - max at 638 354 (score: 0.506803).
+INFO - Failed to relocalise - max at 640 392 (score: 0.558801).
+INFO - Failed to relocalise - max at 644 366 (score: 0.544003).
+INFO - Failed to relocalise - max at 640 390 (score: 0.588396).
+INFO - Failed to relocalise - max at 640 362 (score: 0.601046).
+INFO - Failed to relocalise - max at 638 360 (score: 0.637318).
+INFO - Relocalised at 638 358 (score: 0.706514).
+WARN - Lost.
+INFO - NCC value: 0.395413 (thresh 0.6).
+INFO - Failed to relocalise - max at 596 304 (score: 0.634048).
+INFO - Failed to relocalise - max at 596 306 (score: 0.619066).
+INFO - Failed to relocalise - max at 610 314 (score: 0.66384).
+INFO - Relocalised at 610 320 (score: 0.757893).
+WARN - Lost.
+INFO - NCC value: 0.541637 (thresh 0.6).
+INFO - Failed to relocalise - max at 632 462 (score: 0.647959).
+INFO - Failed to relocalise - max at 618 450 (score: 0.571815).
+INFO - Failed to relocalise - max at 618 456 (score: 0.567496).
+INFO - Failed to relocalise - max at 620 460 (score: 0.555562).
+INFO - Failed to relocalise - max at 628 504 (score: 0.540202).
+INFO - Failed to relocalise - max at 620 472 (score: 0.531155).
+INFO - Failed to relocalise - max at 628 514 (score: 0.52687).
+INFO - Failed to relocalise - max at 630 520 (score: 0.539556).
+INFO - Failed to relocalise - max at 622 488 (score: 0.534635).
+INFO - Failed to relocalise - max at 624 492 (score: 0.524645).
+INFO - Failed to relocalise - max at 624 498 (score: 0.515284).
+INFO - Failed to relocalise - max at 624 504 (score: 0.50893).
+INFO - Failed to relocalise - max at 628 506 (score: 0.541183).
+INFO - Failed to relocalise - max at 634 510 (score: 0.555832).
+INFO - Failed to relocalise - max at 630 518 (score: 0.551525).
+INFO - Failed to relocalise - max at 632 522 (score: 0.572122).
+INFO - Failed to relocalise - max at 634 526 (score: 0.594218).
+INFO - Failed to relocalise - max at 636 532 (score: 0.589549).
+INFO - Failed to relocalise - max at 636 536 (score: 0.570233).
+INFO - Failed to relocalise - max at 636 542 (score: 0.577006).
+INFO - Failed to relocalise - max at 634 548 (score: 0.577401).
+INFO - Failed to relocalise - max at 636 552 (score: 0.595056).
+INFO - Failed to relocalise - max at 638 556 (score: 0.602674).
+INFO - Failed to relocalise - max at 638 560 (score: 0.613069).
+INFO - Failed to relocalise - max at 640 562 (score: 0.6014).
+INFO - Failed to relocalise - max at 640 566 (score: 0.601194).
+INFO - Failed to relocalise - max at 640 570 (score: 0.572002).
+INFO - Failed to relocalise - max at 640 576 (score: 0.549419).
+INFO - Failed to relocalise - max at 642 580 (score: 0.534866).
+INFO - Failed to relocalise - max at 642 584 (score: 0.530741).
+INFO - Failed to relocalise - max at 642 588 (score: 0.517284).
+INFO - Failed to relocalise - max at 644 592 (score: 0.519643).
+INFO - Failed to relocalise - max at 646 626 (score: 0.51894).
+INFO - Failed to relocalise - max at 646 600 (score: 0.511975).
+INFO - Failed to relocalise - max at 646 604 (score: 0.51199).
+INFO - Failed to relocalise - max at 646 608 (score: 0.518593).
+INFO - Failed to relocalise - max at 646 612 (score: 0.510809).
+INFO - Failed to relocalise - max at 646 616 (score: 0.501914).
+INFO - Failed to relocalise - max at 648 620 (score: 0.502903).
+INFO - Failed to relocalise - max at 648 624 (score: 0.490015).
+INFO - Failed to relocalise - max at 650 628 (score: 0.489382).
+INFO - Failed to relocalise - max at 650 632 (score: 0.475269).
+INFO - Failed to relocalise - max at 652 636 (score: 0.464735).
+INFO - Failed to relocalise - max at 652 640 (score: 0.474044).
+INFO - Failed to relocalise - max at 654 644 (score: 0.473774).
+INFO - Failed to relocalise - max at 658 662 (score: 0.588443).
+INFO - Failed to relocalise - max at 658 660 (score: 0.59392).
+INFO - Failed to relocalise - max at 650 640 (score: 0.560572).
+INFO - Failed to relocalise - max at 646 640 (score: 0.572539).
+INFO - Failed to relocalise - max at 646 638 (score: 0.566834).
+INFO - Failed to relocalise - max at 644 636 (score: 0.569396).
+INFO - Failed to relocalise - max at 654 654 (score: 0.479743).
+INFO - Failed to relocalise - max at 646 632 (score: 0.577935).
+INFO - Failed to relocalise - max at 646 630 (score: 0.550313).
+INFO - Failed to relocalise - max at 650 648 (score: 0.569255).
+INFO - Failed to relocalise - max at 650 644 (score: 0.556615).
+INFO - Failed to relocalise - max at 632 628 (score: 0.548139).
+INFO - Failed to relocalise - max at 632 624 (score: 0.542597).
+INFO - Failed to relocalise - max at 632 622 (score: 0.539824).
+INFO - Failed to relocalise - max at 648 634 (score: 0.506649).
+INFO - Failed to relocalise - max at 646 630 (score: 0.607636).
+INFO - Failed to relocalise - max at 644 626 (score: 0.601782).
+INFO - Failed to relocalise - max at 644 620 (score: 0.611039).
+INFO - Failed to relocalise - max at 642 616 (score: 0.599446).
+INFO - Failed to relocalise - max at 642 612 (score: 0.601945).
+INFO - Failed to relocalise - max at 642 608 (score: 0.585762).
+INFO - Failed to relocalise - max at 626 588 (score: 0.541478).
+INFO - Failed to relocalise - max at 626 582 (score: 0.546685).
+INFO - Failed to relocalise - max at 626 578 (score: 0.553127).
+INFO - Failed to relocalise - max at 626 572 (score: 0.536133).
+INFO - Failed to relocalise - max at 626 568 (score: 0.536117).
+INFO - Failed to relocalise - max at 624 564 (score: 0.548847).
+INFO - Failed to relocalise - max at 638 572 (score: 0.544834).
+INFO - Failed to relocalise - max at 636 568 (score: 0.576426).
+INFO - Failed to relocalise - max at 636 562 (score: 0.603349).
+INFO - Failed to relocalise - max at 634 556 (score: 0.60203).
+INFO - Failed to relocalise - max at 634 552 (score: 0.63905).
+INFO - Failed to relocalise - max at 634 546 (score: 0.655093).
+INFO - Failed to relocalise - max at 632 540 (score: 0.648546).
+INFO - Failed to relocalise - max at 632 534 (score: 0.671786).
+INFO - Failed to relocalise - max at 632 530 (score: 0.681249).
+INFO - Relocalised at 630 524 (score: 0.722187).
+WARN - Lost.
+INFO - NCC value: 0.594402 (thresh 0.6).
+INFO - Failed to relocalise - max at 596 404 (score: 0.617668).
+INFO - Failed to relocalise - max at 596 384 (score: 0.567512).
+INFO - Failed to relocalise - max at 580 412 (score: 0.504022).
+INFO - Failed to relocalise - max at 594 388 (score: 0.459196).
+INFO - Failed to relocalise - max at 610 366 (score: 0.4954).
+INFO - Failed to relocalise - max at 608 362 (score: 0.430181).
+INFO - Failed to relocalise - max at 608 356 (score: 0.418037).
+INFO - Failed to relocalise - max at 608 350 (score: 0.337606).
+INFO - Failed to relocalise - max at 598 336 (score: 0.334851).
+INFO - Failed to relocalise - max at 598 330 (score: 0.313639).
+INFO - Failed to relocalise - max at 598 344 (score: 0.275334).
+INFO - Failed to relocalise - max at 598 340 (score: 0.271004).
+INFO - Failed to relocalise - max at 600 342 (score: 0.263509).
+INFO - Failed to relocalise - max at 600 344 (score: 0.270147).
+INFO - Failed to relocalise - max at 606 346 (score: 0.0304599).
+INFO - Failed to relocalise - max at 606 340 (score: 0.466375).
+INFO - Failed to relocalise - max at 606 338 (score: 0.490675).
+INFO - Failed to relocalise - max at 604 338 (score: 0.483169).
+INFO - Failed to relocalise - max at 606 336 (score: 0.489054).
+INFO - Failed to relocalise - max at 606 334 (score: 0.515162).
+INFO - Failed to relocalise - max at 604 332 (score: 0.535949).
+INFO - Failed to relocalise - max at 604 332 (score: 0.611116).
+INFO - Failed to relocalise - max at 604 330 (score: 0.561413).
+INFO - Failed to relocalise - max at 606 330 (score: 0.529854).
+INFO - Failed to relocalise - max at 604 330 (score: 0.559187).
+INFO - Failed to relocalise - max at 602 330 (score: 0.519487).
+INFO - Failed to relocalise - max at 604 330 (score: 0.549939).
+INFO - Failed to relocalise - max at 604 328 (score: 0.541913).
+INFO - Failed to relocalise - max at 602 328 (score: 0.443835).
+INFO - Failed to relocalise - max at 614 340 (score: 0.413538).
+INFO - Failed to relocalise - max at 612 346 (score: 0.441242).
+INFO - Failed to relocalise - max at 610 350 (score: 0.34868).
+INFO - Failed to relocalise - max at 606 350 (score: 0.217469).
+INFO - Failed to relocalise - max at 594 350 (score: 0.164952).
+INFO - Failed to relocalise - max at 588 396 (score: 0.0369765).
+INFO - Failed to relocalise - max at 590 394 (score: 0.0740924).
+INFO - Failed to relocalise - max at 598 388 (score: 0.575774).
+INFO - Failed to relocalise - max at 598 388 (score: 0.607707).
+INFO - Relocalised at 598 388 (score: 0.725521).
+WARN - Lost.
+INFO - NCC value: 0.529074 (thresh 0.6).
+INFO - Failed to relocalise - max at 522 416 (score: 0.47014).
+WARN - Lost.
+INFO - NCC value: 0.473846 (thresh 0.6).
+INFO - Failed to relocalise - max at 518 410 (score: 0.478423).
+INFO - Failed to relocalise - max at 264 368 (score: 0.52162).
+INFO - Failed to relocalise - max at 516 406 (score: 0.550212).
+INFO - Failed to relocalise - max at 264 366 (score: 0.547613).
+INFO - Failed to relocalise - max at 508 368 (score: 0.599403).
+INFO - Failed to relocalise - max at 264 362 (score: 0.567039).
+INFO - Failed to relocalise - max at 520 402 (score: 0.562826).
+INFO - Failed to relocalise - max at 254 372 (score: 0.46346).
+INFO - Failed to relocalise - max at 526 398 (score: 0.533929).
+INFO - Failed to relocalise - max at 246 330 (score: 0.410048).
+INFO - Failed to relocalise - max at 522 368 (score: 0.608137).
+INFO - Failed to relocalise - max at 246 328 (score: 0.397308).
+INFO - Failed to relocalise - max at 520 364 (score: 0.657692).
+INFO - Failed to relocalise - max at 240 328 (score: 0.471302).
+INFO - Relocalised at 520 358 (score: 0.711105).
+INFO - Failed to relocalise - max at 246 342 (score: 0.496424).
+INFO - Failed to relocalise - max at 246 346 (score: 0.462687).
+INFO - Failed to relocalise - max at 244 334 (score: 0.399088).
+INFO - Failed to relocalise - max at 244 332 (score: 0.426505).
+INFO - Failed to relocalise - max at 242 328 (score: 0.416198).
+INFO - Failed to relocalise - max at 242 326 (score: 0.430018).
+INFO - Failed to relocalise - max at 242 322 (score: 0.42786).
+INFO - Failed to relocalise - max at 242 318 (score: 0.40741).
+INFO - Failed to relocalise - max at 238 288 (score: 0.503563).
+INFO - Failed to relocalise - max at 246 306 (score: 0.438526).
+WARN - Lost.
+INFO - NCC value: -0.170269 (thresh 0.6).
+INFO - Failed to relocalise - max at 244 300 (score: 0.44727).
+INFO - Failed to relocalise - max at 522 320 (score: 0.58269).
+INFO - Failed to relocalise - max at 244 294 (score: 0.449659).
+INFO - Failed to relocalise - max at 526 332 (score: 0.525133).
+INFO - Failed to relocalise - max at 248 268 (score: 0.531961).
+INFO - Failed to relocalise - max at 524 326 (score: 0.626246).
+INFO - Failed to relocalise - max at 248 266 (score: 0.613878).
+INFO - Failed to relocalise - max at 512 294 (score: 0.623616).
+INFO - Failed to relocalise - max at 244 262 (score: 0.640828).
+INFO - Relocalised at 508 288 (score: 0.717561).
+INFO - Relocalised at 242 256 (score: 0.74286).
+WARN - Lost.
+INFO - NCC value: 0.594017 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.359504 (thresh 0.6).
+INFO - Failed to relocalise - max at 230 264 (score: 0.591129).
+INFO - Failed to relocalise - max at 488 320 (score: 0.496943).
+INFO - Failed to relocalise - max at 218 254 (score: 0.426657).
+INFO - Failed to relocalise - max at 488 322 (score: 0.522424).
+INFO - Failed to relocalise - max at 220 246 (score: 0.442437).
+INFO - Failed to relocalise - max at 494 326 (score: 0.474573).
+INFO - Failed to relocalise - max at 232 262 (score: 0.391056).
+INFO - Failed to relocalise - max at 478 326 (score: 0.48565).
+INFO - Failed to relocalise - max at 212 262 (score: 0.365989).
+INFO - Failed to relocalise - max at 474 326 (score: 0.489717).
+INFO - Failed to relocalise - max at 228 296 (score: 0.501459).
+INFO - Failed to relocalise - max at 482 334 (score: 0.495285).
+INFO - Failed to relocalise - max at 228 304 (score: 0.502067).
+INFO - Failed to relocalise - max at 484 338 (score: 0.504685).
+INFO - Failed to relocalise - max at 226 310 (score: 0.624828).
+INFO - Relocalised at 492 322 (score: 0.805585).
+INFO - Failed to relocalise - max at 224 292 (score: 0.627207).
+INFO - Failed to relocalise - max at 226 294 (score: 0.641167).
+INFO - Failed to relocalise - max at 226 324 (score: 0.614135).
+INFO - Failed to relocalise - max at 226 328 (score: 0.572923).
+INFO - Failed to relocalise - max at 226 334 (score: 0.629507).
+INFO - Failed to relocalise - max at 226 292 (score: 0.63255).
+INFO - Failed to relocalise - max at 228 296 (score: 0.518124).
+INFO - Failed to relocalise - max at 228 300 (score: 0.522398).
+INFO - Failed to relocalise - max at 234 322 (score: 0.583341).
+INFO - Failed to relocalise - max at 234 326 (score: 0.650284).
+INFO - Failed to relocalise - max at 234 330 (score: 0.675214).
+INFO - Relocalised at 236 334 (score: 0.708349).
+WARN - Lost.
+INFO - NCC value: 0.447177 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.509798 (thresh 0.6).
+INFO - Failed to relocalise - max at 484 360 (score: 0.514905).
+INFO - Failed to relocalise - max at 236 340 (score: 0.531574).
+INFO - Failed to relocalise - max at 494 400 (score: 0.555914).
+INFO - Failed to relocalise - max at 236 344 (score: 0.560131).
+INFO - Failed to relocalise - max at 492 402 (score: 0.576537).
+INFO - Failed to relocalise - max at 238 334 (score: 0.461451).
+INFO - Failed to relocalise - max at 488 402 (score: 0.578734).
+INFO - Failed to relocalise - max at 256 368 (score: 0.488516).
+INFO - Failed to relocalise - max at 488 404 (score: 0.557627).
+INFO - Failed to relocalise - max at 258 370 (score: 0.507434).
+INFO - Failed to relocalise - max at 496 412 (score: 0.517349).
+INFO - Failed to relocalise - max at 260 374 (score: 0.548945).
+INFO - Failed to relocalise - max at 502 374 (score: 0.513909).
+INFO - Failed to relocalise - max at 260 376 (score: 0.547785).
+INFO - Failed to relocalise - max at 504 398 (score: 0.683023).
+INFO - Relocalised at 240 368 (score: 0.730973).
+INFO - Relocalised at 506 402 (score: 0.813175).
+WARN - Lost.
+INFO - NCC value: 0.431691 (thresh 0.6).
+INFO - Failed to relocalise - max at 522 558 (score: 0.45808).
+INFO - Failed to relocalise - max at 520 568 (score: 0.436833).
+INFO - Failed to relocalise - max at 520 568 (score: 0.484822).
+INFO - Failed to relocalise - max at 524 560 (score: 0.397836).
+INFO - Failed to relocalise - max at 524 558 (score: 0.389084).
+INFO - Failed to relocalise - max at 520 566 (score: 0.465429).
+INFO - Failed to relocalise - max at 518 566 (score: 0.473835).
+INFO - Failed to relocalise - max at 516 542 (score: 0.480278).
+INFO - Failed to relocalise - max at 516 566 (score: 0.425953).
+INFO - Failed to relocalise - max at 512 544 (score: 0.527848).
+INFO - Failed to relocalise - max at 512 546 (score: 0.422343).
+INFO - Failed to relocalise - max at 522 572 (score: 0.461732).
+INFO - Failed to relocalise - max at 516 556 (score: 0.499836).
+INFO - Failed to relocalise - max at 516 560 (score: 0.514347).
+INFO - Failed to relocalise - max at 482 588 (score: 0.301955).
+INFO - Failed to relocalise - max at 482 592 (score: 0.36739).
+INFO - Failed to relocalise - max at 480 564 (score: 0.551799).
+INFO - Failed to relocalise - max at 484 568 (score: 0.502496).
+INFO - Failed to relocalise - max at 484 568 (score: 0.438035).
+INFO - Failed to relocalise - max at 484 564 (score: 0.443775).
+INFO - Failed to relocalise - max at 484 570 (score: 0.407757).
+INFO - Failed to relocalise - max at 484 572 (score: 0.411047).
+INFO - Failed to relocalise - max at 484 564 (score: 0.481401).
+INFO - Failed to relocalise - max at 484 588 (score: 0.43473).
+INFO - Failed to relocalise - max at 516 582 (score: 0.321145).
+INFO - Failed to relocalise - max at 520 588 (score: 0.435532).
+INFO - Failed to relocalise - max at 522 592 (score: 0.430703).
+INFO - Failed to relocalise - max at 522 590 (score: 0.423798).
+INFO - Failed to relocalise - max at 522 588 (score: 0.464435).
+INFO - Failed to relocalise - max at 488 584 (score: 0.500127).
+INFO - Failed to relocalise - max at 516 588 (score: 0.662368).
+INFO - Relocalised at 520 594 (score: 0.777733).
+WARN - Lost.
+INFO - NCC value: 0.477923 (thresh 0.6).
+INFO - Failed to relocalise - max at 506 630 (score: 0.498076).
+INFO - Failed to relocalise - max at 506 632 (score: 0.527366).
+INFO - Failed to relocalise - max at 506 634 (score: 0.511272).
+INFO - Failed to relocalise - max at 502 638 (score: 0.265303).
+INFO - Failed to relocalise - max at 500 640 (score: 0.377305).
+INFO - Failed to relocalise - max at 504 638 (score: 0.362736).
+INFO - Failed to relocalise - max at 502 640 (score: 0.414562).
+INFO - Failed to relocalise - max at 500 640 (score: 0.464406).
+INFO - Failed to relocalise - max at 492 630 (score: 0.696688).
+INFO - Failed to relocalise - max at 492 630 (score: 0.678529).
+INFO - Failed to relocalise - max at 492 632 (score: 0.694532).
+INFO - Failed to relocalise - max at 492 632 (score: 0.684583).
+INFO - Relocalised at 494 634 (score: 0.829856).
+WARN - Lost.
+INFO - NCC value: 0.558267 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.516016 (thresh 0.6).
+INFO - Failed to relocalise - max at 260 380 (score: 0.509974).
+INFO - Failed to relocalise - max at 532 404 (score: 0.501221).
+INFO - Failed to relocalise - max at 264 378 (score: 0.491221).
+INFO - Failed to relocalise - max at 530 406 (score: 0.474995).
+INFO - Failed to relocalise - max at 266 376 (score: 0.490866).
+INFO - Failed to relocalise - max at 522 406 (score: 0.415496).
+INFO - Failed to relocalise - max at 536 400 (score: 0.483836).
+INFO - Failed to relocalise - max at 260 374 (score: 0.439671).
+INFO - Failed to relocalise - max at 510 404 (score: 0.47963).
+INFO - Failed to relocalise - max at 264 370 (score: 0.515149).
+INFO - Failed to relocalise - max at 514 404 (score: 0.577906).
+INFO - Failed to relocalise - max at 264 366 (score: 0.592917).
+INFO - Failed to relocalise - max at 508 366 (score: 0.577528).
+INFO - Failed to relocalise - max at 264 362 (score: 0.535487).
+INFO - Failed to relocalise - max at 524 370 (score: 0.567437).
+INFO - Failed to relocalise - max at 240 336 (score: 0.6208).
+INFO - Failed to relocalise - max at 522 364 (score: 0.631419).
+INFO - Failed to relocalise - max at 246 342 (score: 0.470241).
+INFO - Failed to relocalise - max at 522 360 (score: 0.678227).
+INFO - Failed to relocalise - max at 246 342 (score: 0.56325).
+INFO - Relocalised at 520 354 (score: 0.710127).
+INFO - Failed to relocalise - max at 246 346 (score: 0.4729).
+WARN - Lost.
+INFO - NCC value: 0.591351 (thresh 0.6).
+INFO - Failed to relocalise - max at 238 314 (score: 0.514431).
+INFO - Relocalised at 520 346 (score: 0.704851).
+INFO - Failed to relocalise - max at 248 342 (score: 0.442116).
+INFO - Failed to relocalise - max at 252 328 (score: 0.44098).
+INFO - Failed to relocalise - max at 244 324 (score: 0.42346).
+INFO - Failed to relocalise - max at 244 322 (score: 0.429396).
+INFO - Failed to relocalise - max at 242 292 (score: 0.430446).
+INFO - Failed to relocalise - max at 240 290 (score: 0.484426).
+INFO - Failed to relocalise - max at 248 308 (score: 0.408994).
+WARN - Lost.
+INFO - NCC value: 0.574749 (thresh 0.6).
+INFO - Failed to relocalise - max at 248 300 (score: 0.423129).
+INFO - Failed to relocalise - max at 524 322 (score: 0.608568).
+INFO - Failed to relocalise - max at 244 294 (score: 0.468504).
+INFO - Failed to relocalise - max at 526 334 (score: 0.504605).
+INFO - Failed to relocalise - max at 248 268 (score: 0.531441).
+INFO - Failed to relocalise - max at 514 300 (score: 0.563723).
+INFO - Failed to relocalise - max at 250 268 (score: 0.600085).
+INFO - Failed to relocalise - max at 524 324 (score: 0.582679).
+INFO - Failed to relocalise - max at 250 268 (score: 0.614667).
+INFO - Failed to relocalise - max at 512 294 (score: 0.626398).
+INFO - Failed to relocalise - max at 248 264 (score: 0.607578).
+INFO - Failed to relocalise - max at 512 292 (score: 0.660186).
+INFO - Failed to relocalise - max at 244 260 (score: 0.6784).
+INFO - Relocalised at 510 286 (score: 0.727152).
+INFO - Relocalised at 244 256 (score: 0.741818).
+WARN - Lost.
+INFO - NCC value: 0.473349 (thresh 0.6).
+INFO - Failed to relocalise - max at 534 280 (score: 0.473207).
+INFO - Failed to relocalise - max at 512 284 (score: 0.472842).
+WARN - Lost.
+INFO - NCC value: 0.597942 (thresh 0.6).
+INFO - Failed to relocalise - max at 512 288 (score: 0.52832).
+INFO - Failed to relocalise - max at 264 264 (score: 0.493124).
+INFO - Failed to relocalise - max at 512 288 (score: 0.548668).
+INFO - Failed to relocalise - max at 272 256 (score: 0.440909).
+INFO - Failed to relocalise - max at 526 326 (score: 0.668236).
+INFO - Failed to relocalise - max at 284 258 (score: 0.492269).
+INFO - Failed to relocalise - max at 524 330 (score: 0.667142).
+INFO - Failed to relocalise - max at 252 266 (score: 0.472199).
+INFO - Failed to relocalise - max at 524 336 (score: 0.643743).
+INFO - Failed to relocalise - max at 254 266 (score: 0.361078).
+INFO - Failed to relocalise - max at 526 340 (score: 0.646427).
+INFO - Failed to relocalise - max at 274 270 (score: 0.268413).
+INFO - Failed to relocalise - max at 536 322 (score: 0.677114).
+INFO - Relocalised at 536 324 (score: 0.772685).
+WARN - Lost.
+INFO - NCC value: 0.489993 (thresh 0.6).
+INFO - Failed to relocalise - max at 528 346 (score: 0.59132).
+INFO - Failed to relocalise - max at 528 350 (score: 0.580624).
+INFO - Failed to relocalise - max at 542 360 (score: 0.557399).
+INFO - Failed to relocalise - max at 526 348 (score: 0.594417).
+INFO - Failed to relocalise - max at 528 350 (score: 0.510001).
+INFO - Failed to relocalise - max at 528 354 (score: 0.510573).
+INFO - Failed to relocalise - max at 526 360 (score: 0.539427).
+INFO - Failed to relocalise - max at 528 362 (score: 0.471911).
+INFO - Failed to relocalise - max at 546 402 (score: 0.553362).
+INFO - Failed to relocalise - max at 538 402 (score: 0.595709).
+INFO - Failed to relocalise - max at 538 404 (score: 0.608666).
+INFO - Failed to relocalise - max at 288 366 (score: 0.394099).
+INFO - Failed to relocalise - max at 540 368 (score: 0.29718).
+INFO - Failed to relocalise - max at 540 368 (score: 0.30691).
+INFO - Failed to relocalise - max at 548 400 (score: 0.448259).
+INFO - Failed to relocalise - max at 540 364 (score: 0.299948).
+INFO - Failed to relocalise - max at 548 370 (score: 0.281279).
+INFO - Failed to relocalise - max at 546 372 (score: 0.387386).
+INFO - Failed to relocalise - max at 544 372 (score: 0.379569).
+INFO - Failed to relocalise - max at 538 370 (score: 0.152599).
+INFO - Failed to relocalise - max at 536 368 (score: 0.45437).
+INFO - Failed to relocalise - max at 538 368 (score: 0.38172).
+INFO - Failed to relocalise - max at 542 374 (score: 0.385443).
+INFO - Failed to relocalise - max at 314 344 (score: 0.348901).
+INFO - Failed to relocalise - max at 542 370 (score: 0.429925).
+INFO - Failed to relocalise - max at 314 340 (score: 0.372141).
+INFO - Failed to relocalise - max at 314 336 (score: 0.369988).
+INFO - Failed to relocalise - max at 314 334 (score: 0.357917).
+INFO - Failed to relocalise - max at 306 326 (score: 0.369061).
+INFO - Failed to relocalise - max at 306 324 (score: 0.368473).
+INFO - Failed to relocalise - max at 306 320 (score: 0.375414).
+INFO - Failed to relocalise - max at 316 344 (score: 0.454026).
+INFO - Failed to relocalise - max at 316 344 (score: 0.452677).
+INFO - Failed to relocalise - max at 318 340 (score: 0.435305).
+INFO - Failed to relocalise - max at 318 338 (score: 0.423295).
+INFO - Failed to relocalise - max at 308 330 (score: 0.38754).
+INFO - Failed to relocalise - max at 308 326 (score: 0.414584).
+INFO - Failed to relocalise - max at 310 330 (score: 0.283015).
+INFO - Failed to relocalise - max at 310 330 (score: 0.338723).
+INFO - Failed to relocalise - max at 308 324 (score: 0.361853).
+INFO - Failed to relocalise - max at 306 326 (score: 0.336217).
+INFO - Failed to relocalise - max at 308 326 (score: 0.352199).
+INFO - Failed to relocalise - max at 308 324 (score: 0.326622).
+INFO - Failed to relocalise - max at 540 344 (score: 0.388061).
+INFO - Failed to relocalise - max at 318 314 (score: 0.387924).
+INFO - Failed to relocalise - max at 308 324 (score: 0.348514).
+INFO - Failed to relocalise - max at 306 324 (score: 0.40239).
+INFO - Failed to relocalise - max at 536 348 (score: 0.57954).
+INFO - Failed to relocalise - max at 304 318 (score: 0.479256).
+INFO - Failed to relocalise - max at 536 346 (score: 0.548558).
+INFO - Failed to relocalise - max at 302 326 (score: 0.40086).
+INFO - Failed to relocalise - max at 542 340 (score: 0.597483).
+INFO - Failed to relocalise - max at 314 330 (score: 0.196701).
+INFO - Failed to relocalise - max at 540 338 (score: 0.693185).
+INFO - Failed to relocalise - max at 538 334 (score: 0.685419).
+INFO - Failed to relocalise - max at 538 330 (score: 0.66651).
+INFO - Relocalised at 536 326 (score: 0.723591).
+WARN - Lost.
+INFO - NCC value: 0.483776 (thresh 0.6).
+INFO - Failed to relocalise - max at 524 324 (score: 0.643061).
+INFO - Failed to relocalise - max at 524 320 (score: 0.631487).
+INFO - Failed to relocalise - max at 524 324 (score: 0.558426).
+INFO - Failed to relocalise - max at 286 258 (score: 0.385796).
+INFO - Failed to relocalise - max at 524 326 (score: 0.532072).
+INFO - Failed to relocalise - max at 290 258 (score: 0.418148).
+INFO - Failed to relocalise - max at 544 326 (score: 0.4834).
+INFO - Failed to relocalise - max at 294 264 (score: 0.445631).
+INFO - Failed to relocalise - max at 294 264 (score: 0.422916).
+INFO - Failed to relocalise - max at 550 294 (score: 0.664639).
+INFO - Failed to relocalise - max at 284 260 (score: 0.617157).
+INFO - Relocalised at 550 292 (score: 0.705238).
+INFO - Failed to relocalise - max at 282 258 (score: 0.65054).
+INFO - Relocalised at 282 256 (score: 0.716311).
+WARN - Lost.
+INFO - NCC value: 0.5714 (thresh 0.6).
+INFO - Relocalised at 280 190 (score: 0.729631).
+WARN - Lost.
+INFO - NCC value: 0.568256 (thresh 0.6).
+INFO - Relocalised at 280 190 (score: 0.72351).
+WARN - Lost.
+INFO - NCC value: 0.423033 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.389471 (thresh 0.6).
+INFO - Failed to relocalise - max at 464 286 (score: 0.509554).
+INFO - Relocalised at 226 292 (score: 0.710085).
+INFO - Failed to relocalise - max at 476 328 (score: 0.534931).
+WARN - Lost.
+INFO - NCC value: 0.549307 (thresh 0.6).
+INFO - Failed to relocalise - max at 476 332 (score: 0.495431).
+INFO - Failed to relocalise - max at 226 304 (score: 0.580185).
+INFO - Failed to relocalise - max at 478 338 (score: 0.522446).
+INFO - Failed to relocalise - max at 226 310 (score: 0.54892).
+INFO - Relocalised at 486 322 (score: 0.804019).
+INFO - Relocalised at 220 290 (score: 0.7174).
+WARN - Lost.
+INFO - NCC value: 0.439734 (thresh 0.6).
+INFO - Failed to relocalise - max at 226 314 (score: 0.631394).
+INFO - Failed to relocalise - max at 226 318 (score: 0.622952).
+WARN - Lost.
+INFO - NCC value: 0.450513 (thresh 0.6).
+INFO - Failed to relocalise - max at 226 320 (score: 0.630726).
+INFO - Failed to relocalise - max at 492 398 (score: 0.565057).
+INFO - Failed to relocalise - max at 226 324 (score: 0.632779).
+INFO - Failed to relocalise - max at 486 400 (score: 0.569176).
+INFO - Failed to relocalise - max at 226 328 (score: 0.628718).
+INFO - Failed to relocalise - max at 484 402 (score: 0.567132).
+INFO - Failed to relocalise - max at 226 332 (score: 0.610619).
+INFO - Failed to relocalise - max at 482 402 (score: 0.577309).
+INFO - Failed to relocalise - max at 226 336 (score: 0.5974).
+INFO - Failed to relocalise - max at 480 404 (score: 0.558036).
+INFO - Failed to relocalise - max at 236 368 (score: 0.443236).
+INFO - Failed to relocalise - max at 496 372 (score: 0.549159).
+INFO - Failed to relocalise - max at 256 374 (score: 0.519831).
+INFO - Failed to relocalise - max at 498 398 (score: 0.598981).
+INFO - Failed to relocalise - max at 236 368 (score: 0.668375).
+INFO - Relocalised at 500 400 (score: 0.818986).
+INFO - Relocalised at 236 370 (score: 0.776502).
+WARN - Lost.
+INFO - NCC value: 0.503012 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.317943 (thresh 0.6).
+INFO - Failed to relocalise - max at 468 414 (score: 0.461568).
+INFO - Failed to relocalise - max at 234 374 (score: 0.524691).
+INFO - Failed to relocalise - max at 460 404 (score: 0.518067).
+INFO - Failed to relocalise - max at 198 376 (score: 0.521509).
+INFO - Failed to relocalise - max at 476 378 (score: 0.612538).
+INFO - Failed to relocalise - max at 210 348 (score: 0.590087).
+INFO - Failed to relocalise - max at 474 372 (score: 0.641626).
+INFO - Failed to relocalise - max at 210 344 (score: 0.61778).
+INFO - Relocalised at 474 366 (score: 0.701703).
+INFO - Failed to relocalise - max at 208 336 (score: 0.679653).
+INFO - Relocalised at 206 332 (score: 0.704249).
+WARN - Lost.
+INFO - NCC value: 0.474655 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.41861 (thresh 0.6).
+INFO - Failed to relocalise - max at 472 320 (score: 0.424926).
+INFO - Failed to relocalise - max at 190 306 (score: 0.422827).
+INFO - Failed to relocalise - max at 462 302 (score: 0.464473).
+INFO - Failed to relocalise - max at 208 300 (score: 0.435446).
+INFO - Failed to relocalise - max at 462 298 (score: 0.523836).
+INFO - Failed to relocalise - max at 194 268 (score: 0.565394).
+INFO - Failed to relocalise - max at 462 296 (score: 0.501651).
+INFO - Failed to relocalise - max at 194 266 (score: 0.527286).
+INFO - Failed to relocalise - max at 462 292 (score: 0.520367).
+INFO - Failed to relocalise - max at 192 258 (score: 0.591922).
+INFO - Failed to relocalise - max at 460 288 (score: 0.635305).
+INFO - Failed to relocalise - max at 192 258 (score: 0.694086).
+INFO - Relocalised at 458 286 (score: 0.706272).
+INFO - Relocalised at 192 254 (score: 0.721074).
+WARN - Lost.
+INFO - NCC value: 0.272971 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.596997 (thresh 0.6).
+INFO - Failed to relocalise - max at 184 260 (score: 0.459351).
+INFO - Failed to relocalise - max at 440 296 (score: 0.457272).
+INFO - Failed to relocalise - max at 182 260 (score: 0.451375).
+INFO - Failed to relocalise - max at 426 286 (score: 0.449123).
+INFO - Failed to relocalise - max at 180 262 (score: 0.404209).
+INFO - Failed to relocalise - max at 426 288 (score: 0.489312).
+INFO - Failed to relocalise - max at 188 256 (score: 0.362024).
+INFO - Failed to relocalise - max at 452 298 (score: 0.531803).
+INFO - Failed to relocalise - max at 180 258 (score: 0.385579).
+INFO - Failed to relocalise - max at 446 300 (score: 0.409585).
+INFO - Failed to relocalise - max at 176 262 (score: 0.478811).
+INFO - Failed to relocalise - max at 196 304 (score: 0.448108).
+INFO - Failed to relocalise - max at 178 294 (score: 0.647706).
+INFO - Relocalised at 178 298 (score: 0.749004).
+INFO - Failed to relocalise - max at 462 348 (score: 0.309814).
+INFO - Failed to relocalise - max at 464 328 (score: 0.452393).
+INFO - Failed to relocalise - max at 464 332 (score: 0.438398).
+INFO - Failed to relocalise - max at 464 338 (score: 0.458029).
+INFO - Failed to relocalise - max at 464 342 (score: 0.432582).
+INFO - Failed to relocalise - max at 458 372 (score: 0.509862).
+INFO - Failed to relocalise - max at 460 374 (score: 0.490672).
+INFO - Failed to relocalise - max at 470 360 (score: 0.434454).
+WARN - Lost.
+INFO - NCC value: 0.485891 (thresh 0.6).
+INFO - Failed to relocalise - max at 444 398 (score: 0.579246).
+INFO - Failed to relocalise - max at 188 344 (score: 0.458533).
+INFO - Failed to relocalise - max at 440 402 (score: 0.588905).
+INFO - Failed to relocalise - max at 188 356 (score: 0.473483).
+INFO - Failed to relocalise - max at 436 402 (score: 0.592479).
+INFO - Failed to relocalise - max at 180 378 (score: 0.472557).
+INFO - Failed to relocalise - max at 476 402 (score: 0.51339).
+INFO - Failed to relocalise - max at 190 366 (score: 0.574178).
+INFO - Relocalised at 456 398 (score: 0.778212).
+INFO - Relocalised at 190 370 (score: 0.75593).
+WARN - Lost.
+INFO - NCC value: 0.42512 (thresh 0.6).
+INFO - Failed to relocalise - max at 432 418 (score: 0.474254).
+WARN - Lost.
+INFO - NCC value: 0.407684 (thresh 0.6).
+INFO - Failed to relocalise - max at 418 404 (score: 0.520739).
+INFO - Failed to relocalise - max at 156 376 (score: 0.511635).
+INFO - Failed to relocalise - max at 418 400 (score: 0.533789).
+INFO - Failed to relocalise - max at 156 374 (score: 0.534341).
+INFO - Failed to relocalise - max at 424 400 (score: 0.569628).
+INFO - Failed to relocalise - max at 160 370 (score: 0.562086).
+INFO - Failed to relocalise - max at 446 396 (score: 0.531116).
+INFO - Failed to relocalise - max at 166 338 (score: 0.567201).
+INFO - Failed to relocalise - max at 174 344 (score: 0.687189).
+INFO - Relocalised at 174 342 (score: 0.733117).
+WARN - Lost.
+INFO - NCC value: 0.118182 (thresh 0.6).
+INFO - Failed to relocalise - max at 162 318 (score: 0.6703).
+INFO - Failed to relocalise - max at 160 312 (score: 0.699072).
+INFO - Failed to relocalise - max at 160 308 (score: 0.658196).
+INFO - Failed to relocalise - max at 158 300 (score: 0.573294).
+INFO - Failed to relocalise - max at 158 296 (score: 0.529566).
+INFO - Failed to relocalise - max at 168 298 (score: 0.481783).
+INFO - Failed to relocalise - max at 166 298 (score: 0.464167).
+INFO - Failed to relocalise - max at 166 296 (score: 0.424821).
+INFO - Failed to relocalise - max at 166 294 (score: 0.345926).
+INFO - Failed to relocalise - max at 158 294 (score: 0.315573).
+INFO - Failed to relocalise - max at 418 294 (score: 0.441033).
+INFO - Failed to relocalise - max at 164 290 (score: 0.216264).
+INFO - Failed to relocalise - max at 418 294 (score: 0.512978).
+INFO - Failed to relocalise - max at 156 260 (score: 0.394962).
+INFO - Failed to relocalise - max at 418 292 (score: 0.569979).
+INFO - Failed to relocalise - max at 146 266 (score: 0.492124).
+INFO - Failed to relocalise - max at 418 292 (score: 0.618501).
+INFO - Failed to relocalise - max at 146 264 (score: 0.549773).
+INFO - Failed to relocalise - max at 416 292 (score: 0.646579).
+INFO - Failed to relocalise - max at 148 260 (score: 0.609015).
+INFO - Failed to relocalise - max at 416 288 (score: 0.67383).
+INFO - Failed to relocalise - max at 148 256 (score: 0.695401).
+INFO - Relocalised at 416 284 (score: 0.728104).
+INFO - Relocalised at 148 254 (score: 0.738486).
+WARN - Lost.
+INFO - NCC value: 0.490311 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.574837 (thresh 0.6).
+INFO - Failed to relocalise - max at 408 288 (score: 0.461528).
+INFO - Failed to relocalise - max at 172 254 (score: 0.453055).
+INFO - Failed to relocalise - max at 438 286 (score: 0.394842).
+INFO - Failed to relocalise - max at 170 256 (score: 0.412945).
+INFO - Failed to relocalise - max at 426 290 (score: 0.465091).
+INFO - Failed to relocalise - max at 160 260 (score: 0.497784).
+INFO - Failed to relocalise - max at 436 288 (score: 0.146837).
+INFO - Failed to relocalise - max at 166 274 (score: 0.52041).
+INFO - Failed to relocalise - max at 170 294 (score: 0.550611).
+INFO - Relocalised at 172 296 (score: 0.732474).
+WARN - Lost.
+INFO - NCC value: 0.484308 (thresh 0.6).
+INFO - Failed to relocalise - max at 454 340 (score: 0.377378).
+INFO - Relocalised at 178 306 (score: 0.778543).
+INFO - Failed to relocalise - max at 466 348 (score: 0.37534).
+WARN - Lost.
+INFO - NCC value: 0.580645 (thresh 0.6).
+INFO - Failed to relocalise - max at 464 330 (score: 0.481617).
+INFO - Relocalised at 184 314 (score: 0.76476).
+INFO - Failed to relocalise - max at 464 332 (score: 0.453942).
+WARN - Lost.
+INFO - NCC value: 0.57655 (thresh 0.6).
+INFO - Failed to relocalise - max at 458 354 (score: 0.527979).
+INFO - Relocalised at 188 324 (score: 0.780128).
+INFO - Failed to relocalise - max at 458 358 (score: 0.667325).
+INFO - Relocalised at 460 364 (score: 0.766822).
+WARN - Lost.
+INFO - NCC value: 0.575322 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.162633 (thresh 0.6).
+INFO - Failed to relocalise - max at 200 344 (score: 0.664118).
+INFO - Failed to relocalise - max at 462 400 (score: 0.543135).
+INFO - Failed to relocalise - max at 210 370 (score: 0.425017).
+INFO - Failed to relocalise - max at 466 404 (score: 0.553838).
+INFO - Failed to relocalise - max at 204 348 (score: 0.525964).
+INFO - Failed to relocalise - max at 470 410 (score: 0.532431).
+INFO - Failed to relocalise - max at 204 380 (score: 0.511502).
+INFO - Failed to relocalise - max at 474 370 (score: 0.548727).
+INFO - Failed to relocalise - max at 206 342 (score: 0.494176).
+INFO - Failed to relocalise - max at 478 396 (score: 0.596109).
+INFO - Failed to relocalise - max at 212 368 (score: 0.598051).
+INFO - Relocalised at 480 400 (score: 0.740692).
+INFO - Relocalised at 216 372 (score: 0.73842).
+WARN - Lost.
+INFO - NCC value: 0.577324 (thresh 0.6).
+INFO - Relocalised at 374 548 (score: 0.824477).
+WARN - Lost.
+INFO - NCC value: 0.472808 (thresh 0.6).
+INFO - Failed to relocalise - max at 654 670 (score: 0.698828).
+INFO - Relocalised at 654 670 (score: 0.737925).
+WARN - Lost.
+INFO - NCC value: 0.568436 (thresh 0.6).
+INFO - Relocalised at 656 676 (score: 0.706095).
+WARN - Lost.
+INFO - NCC value: 0.496798 (thresh 0.6).
+INFO - Relocalised at 656 680 (score: 0.721569).
+WARN - Lost.
+INFO - NCC value: 0.522166 (thresh 0.6).
+INFO - Relocalised at 658 690 (score: 0.728885).
+WARN - Lost.
+INFO - NCC value: 0.024085 (thresh 0.6).
+INFO - Failed to relocalise - max at 660 696 (score: 0.687762).
+INFO - Failed to relocalise - max at 660 698 (score: 0.682631).
+INFO - Failed to relocalise - max at 662 700 (score: 0.663852).
+INFO - Failed to relocalise - max at 662 702 (score: 0.698439).
+INFO - Relocalised at 662 704 (score: 0.70753).
+WARN - Lost.
+INFO - NCC value: 0.502746 (thresh 0.6).
+INFO - Failed to relocalise - max at 662 708 (score: 0.673753).
+INFO - Failed to relocalise - max at 662 704 (score: 0.666314).
+INFO - Relocalised at 662 704 (score: 0.715343).
+WARN - Lost.
+INFO - NCC value: 0.527818 (thresh 0.6).
+INFO - Failed to relocalise - max at 662 704 (score: 0.667519).
+INFO - Failed to relocalise - max at 662 706 (score: 0.657668).
+INFO - Failed to relocalise - max at 662 706 (score: 0.675613).
+INFO - Relocalised at 662 706 (score: 0.717614).
+WARN - Lost.
+INFO - NCC value: 0.575978 (thresh 0.6).
+INFO - Relocalised at 662 706 (score: 0.718084).
+WARN - Lost.
+INFO - NCC value: 0.537115 (thresh 0.6).
+INFO - Failed to relocalise - max at 664 704 (score: 0.287217).
+INFO - Failed to relocalise - max at 670 706 (score: 0.418242).
+INFO - Failed to relocalise - max at 672 720 (score: 0.400526).
+INFO - Failed to relocalise - max at 670 718 (score: 0.265748).
+INFO - Failed to relocalise - max at 670 706 (score: 0.389029).
+INFO - Failed to relocalise - max at 666 698 (score: 0.330241).
+INFO - Failed to relocalise - max at 656 718 (score: 0.48393).
+INFO - Failed to relocalise - max at 658 690 (score: 0.230552).
+INFO - Failed to relocalise - max at 658 708 (score: 0.27958).
+INFO - Failed to relocalise - max at 666 698 (score: 0.335027).
+INFO - Failed to relocalise - max at 656 718 (score: 0.510986).
+INFO - Failed to relocalise - max at 656 700 (score: 0.228984).
+INFO - Failed to relocalise - max at 664 720 (score: 0.361843).
+INFO - Failed to relocalise - max at 662 696 (score: 0.427219).
+INFO - Failed to relocalise - max at 656 690 (score: 0.127978).
+INFO - Failed to relocalise - max at 660 692 (score: 0.587767).
+INFO - Failed to relocalise - max at 656 686 (score: 0.672173).
+INFO - Relocalised at 654 682 (score: 0.720251).
+WARN - Lost.
+INFO - NCC value: 0.59164 (thresh 0.6).
+INFO - Failed to relocalise - max at 636 662 (score: 0.499876).
+INFO - Failed to relocalise - max at 654 664 (score: 0.257157).
+INFO - Failed to relocalise - max at 654 664 (score: 0.24025).
+INFO - Failed to relocalise - max at 656 662 (score: 0.353268).
+INFO - Failed to relocalise - max at 644 638 (score: 0.508884).
+INFO - Failed to relocalise - max at 644 632 (score: 0.581006).
+INFO - Failed to relocalise - max at 644 626 (score: 0.584286).
+INFO - Failed to relocalise - max at 642 622 (score: 0.595703).
+INFO - Failed to relocalise - max at 642 616 (score: 0.583648).
+INFO - Failed to relocalise - max at 640 610 (score: 0.582838).
+INFO - Failed to relocalise - max at 640 604 (score: 0.58396).
+INFO - Failed to relocalise - max at 638 600 (score: 0.575505).
+INFO - Failed to relocalise - max at 638 594 (score: 0.573587).
+INFO - Failed to relocalise - max at 638 588 (score: 0.565682).
+INFO - Failed to relocalise - max at 634 584 (score: 0.550756).
+INFO - Failed to relocalise - max at 632 580 (score: 0.560844).
+INFO - Failed to relocalise - max at 632 574 (score: 0.566225).
+INFO - Failed to relocalise - max at 628 570 (score: 0.558763).
+INFO - Failed to relocalise - max at 628 564 (score: 0.567).
+INFO - Failed to relocalise - max at 626 560 (score: 0.578098).
+INFO - Failed to relocalise - max at 626 554 (score: 0.578523).
+INFO - Failed to relocalise - max at 626 550 (score: 0.611655).
+INFO - Failed to relocalise - max at 626 546 (score: 0.592839).
+INFO - Failed to relocalise - max at 626 540 (score: 0.583015).
+INFO - Failed to relocalise - max at 624 536 (score: 0.567258).
+INFO - Failed to relocalise - max at 624 530 (score: 0.554194).
+INFO - Failed to relocalise - max at 624 526 (score: 0.553363).
+INFO - Failed to relocalise - max at 624 520 (score: 0.547362).
+INFO - Failed to relocalise - max at 626 552 (score: 0.537522).
+INFO - Failed to relocalise - max at 626 548 (score: 0.545118).
+INFO - Failed to relocalise - max at 618 506 (score: 0.559829).
+INFO - Failed to relocalise - max at 616 502 (score: 0.571378).
+INFO - Failed to relocalise - max at 616 496 (score: 0.596375).
+INFO - Failed to relocalise - max at 616 490 (score: 0.593071).
+INFO - Failed to relocalise - max at 632 498 (score: 0.601274).
+INFO - Failed to relocalise - max at 632 492 (score: 0.605688).
+INFO - Failed to relocalise - max at 630 486 (score: 0.632209).
+INFO - Failed to relocalise - max at 630 482 (score: 0.660769).
+INFO - Failed to relocalise - max at 630 476 (score: 0.685103).
+INFO - Failed to relocalise - max at 628 472 (score: 0.688118).
+INFO - Relocalised at 628 466 (score: 0.72695).
+WARN - Lost.
+INFO - NCC value: 0.593949 (thresh 0.6).
+INFO - Failed to relocalise - max at 618 408 (score: 0.549367).
+INFO - Failed to relocalise - max at 622 408 (score: 0.576617).
+INFO - Failed to relocalise - max at 622 412 (score: 0.596832).
+INFO - Failed to relocalise - max at 624 412 (score: 0.601731).
+INFO - Failed to relocalise - max at 626 414 (score: 0.602759).
+INFO - Failed to relocalise - max at 626 418 (score: 0.598848).
+INFO - Failed to relocalise - max at 626 420 (score: 0.623497).
+INFO - Failed to relocalise - max at 626 422 (score: 0.606387).
+INFO - Failed to relocalise - max at 626 420 (score: 0.602533).
+INFO - Failed to relocalise - max at 632 416 (score: 0.550145).
+INFO - Failed to relocalise - max at 634 446 (score: 0.354258).
+INFO - Failed to relocalise - max at 628 420 (score: 0.621033).
+INFO - Failed to relocalise - max at 632 458 (score: 0.524197).
+INFO - Failed to relocalise - max at 628 420 (score: 0.609397).
+INFO - Failed to relocalise - max at 634 454 (score: 0.427655).
+INFO - Failed to relocalise - max at 636 456 (score: 0.288444).
+INFO - Failed to relocalise - max at 626 422 (score: 0.640596).
+INFO - Failed to relocalise - max at 632 430 (score: 0.367612).
+INFO - Failed to relocalise - max at 628 422 (score: 0.558532).
+INFO - Failed to relocalise - max at 632 428 (score: 0.382325).
+INFO - Failed to relocalise - max at 636 444 (score: 0.366857).
+INFO - Failed to relocalise - max at 628 420 (score: 0.597665).
+INFO - Failed to relocalise - max at 624 426 (score: 0.652037).
+INFO - Failed to relocalise - max at 634 448 (score: 0.659663).
+INFO - Relocalised at 632 452 (score: 0.766713).
+WARN - Lost.
+INFO - NCC value: 0.561281 (thresh 0.6).
+INFO - Failed to relocalise - max at 636 478 (score: 0.546787).
+INFO - Failed to relocalise - max at 638 480 (score: 0.533814).
+INFO - Failed to relocalise - max at 638 478 (score: 0.567856).
+INFO - Failed to relocalise - max at 636 478 (score: 0.600588).
+INFO - Failed to relocalise - max at 636 478 (score: 0.635631).
+INFO - Failed to relocalise - max at 634 478 (score: 0.603647).
+INFO - Failed to relocalise - max at 636 480 (score: 0.575628).
+INFO - Failed to relocalise - max at 638 480 (score: 0.539466).
+INFO - Failed to relocalise - max at 638 480 (score: 0.545967).
+INFO - Failed to relocalise - max at 638 482 (score: 0.475202).
+INFO - Failed to relocalise - max at 628 476 (score: 0.457428).
+INFO - Failed to relocalise - max at 632 492 (score: 0.513843).
+INFO - Failed to relocalise - max at 632 480 (score: 0.472114).
+INFO - Failed to relocalise - max at 632 484 (score: 0.486214).
+INFO - Failed to relocalise - max at 636 468 (score: 0.574301).
+INFO - Failed to relocalise - max at 636 508 (score: 0.610878).
+INFO - Failed to relocalise - max at 636 510 (score: 0.596113).
+INFO - Failed to relocalise - max at 636 514 (score: 0.584625).
+INFO - Failed to relocalise - max at 636 516 (score: 0.573506).
+INFO - Failed to relocalise - max at 638 520 (score: 0.564042).
+INFO - Failed to relocalise - max at 638 522 (score: 0.56271).
+INFO - Failed to relocalise - max at 638 526 (score: 0.555724).
+INFO - Failed to relocalise - max at 638 528 (score: 0.542167).
+INFO - Failed to relocalise - max at 638 530 (score: 0.509737).
+INFO - Failed to relocalise - max at 638 534 (score: 0.47987).
+INFO - Failed to relocalise - max at 638 512 (score: 0.38858).
+INFO - Failed to relocalise - max at 640 540 (score: 0.415249).
+INFO - Failed to relocalise - max at 640 544 (score: 0.384978).
+INFO - Failed to relocalise - max at 640 548 (score: 0.369574).
+INFO - Failed to relocalise - max at 640 552 (score: 0.345229).
+INFO - Failed to relocalise - max at 638 534 (score: 0.282414).
+INFO - Failed to relocalise - max at 638 538 (score: 0.252923).
+INFO - Failed to relocalise - max at 642 542 (score: 0.252997).
+INFO - Failed to relocalise - max at 642 546 (score: 0.23058).
+INFO - Failed to relocalise - max at 644 548 (score: 0.215078).
+INFO - Failed to relocalise - max at 644 552 (score: 0.182031).
+INFO - Failed to relocalise - max at 648 546 (score: 0.148278).
+INFO - Failed to relocalise - max at 642 556 (score: 0.0312363).
+INFO - Failed to relocalise - max at 646 558 (score: 0.0852839).
+INFO - Failed to relocalise - max at 644 562 (score: 0.0202614).
+INFO - Failed to relocalise - max at 644 574 (score: 0.0533654).
+INFO - Failed to relocalise - max at 648 566 (score: 0.00901678).
+INFO - Failed to relocalise - max at 646 546 (score: 0.00952129).
+INFO - Failed to relocalise - max at 648 544 (score: 0.133243).
+INFO - Failed to relocalise - max at 648 538 (score: 0.125536).
+INFO - Failed to relocalise - max at 646 534 (score: 0.0652751).
+INFO - Failed to relocalise - max at 652 584 (score: 0.0938093).
+INFO - Failed to relocalise - max at 654 582 (score: 0.175685).
+INFO - Failed to relocalise - max at 648 580 (score: 0.168323).
+INFO - Failed to relocalise - max at 642 594 (score: 0.393411).
+INFO - Failed to relocalise - max at 646 596 (score: 0.572724).
+INFO - Failed to relocalise - max at 646 596 (score: 0.576005).
+INFO - Failed to relocalise - max at 640 574 (score: 0.587259).
+INFO - Failed to relocalise - max at 644 598 (score: 0.558362).
+INFO - Failed to relocalise - max at 640 600 (score: 0.61817).
+INFO - Failed to relocalise - max at 636 602 (score: 0.667098).
+INFO - Failed to relocalise - max at 632 604 (score: 0.675967).
+INFO - Failed to relocalise - max at 628 606 (score: 0.662459).
+INFO - Failed to relocalise - max at 622 608 (score: 0.682636).
+INFO - Failed to relocalise - max at 618 610 (score: 0.68267).
+INFO - Failed to relocalise - max at 612 612 (score: 0.673542).
+INFO - Failed to relocalise - max at 608 614 (score: 0.671862).
+INFO - Failed to relocalise - max at 602 618 (score: 0.67339).
+INFO - Failed to relocalise - max at 598 620 (score: 0.68973).
+INFO - Failed to relocalise - max at 594 622 (score: 0.665134).
+INFO - Failed to relocalise - max at 588 624 (score: 0.671476).
+INFO - Failed to relocalise - max at 584 628 (score: 0.674562).
+INFO - Failed to relocalise - max at 578 630 (score: 0.683171).
+INFO - Failed to relocalise - max at 574 632 (score: 0.688066).
+INFO - Failed to relocalise - max at 568 634 (score: 0.677845).
+INFO - Failed to relocalise - max at 564 636 (score: 0.672709).
+INFO - Failed to relocalise - max at 558 640 (score: 0.668357).
+INFO - Failed to relocalise - max at 554 642 (score: 0.694177).
+INFO - Failed to relocalise - max at 548 644 (score: 0.682357).
+INFO - Failed to relocalise - max at 544 646 (score: 0.693883).
+INFO - Failed to relocalise - max at 540 648 (score: 0.670555).
+INFO - Failed to relocalise - max at 534 652 (score: 0.691653).
+INFO - Failed to relocalise - max at 530 654 (score: 0.687434).
+INFO - Failed to relocalise - max at 524 656 (score: 0.69601).
+INFO - Failed to relocalise - max at 520 658 (score: 0.685548).
+INFO - Failed to relocalise - max at 514 662 (score: 0.690149).
+INFO - Relocalised at 510 664 (score: 0.709634).
+WARN - Lost.
+INFO - NCC value: 0.462099 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.214829 (thresh 0.6).
+INFO - Failed to relocalise - max at 466 646 (score: 0.526809).
+INFO - Failed to relocalise - max at 226 602 (score: 0.516587).
+INFO - Failed to relocalise - max at 466 644 (score: 0.512001).
+INFO - Failed to relocalise - max at 224 600 (score: 0.51919).
+INFO - Failed to relocalise - max at 472 598 (score: 0.51165).
+INFO - Failed to relocalise - max at 224 596 (score: 0.53802).
+INFO - Failed to relocalise - max at 484 628 (score: 0.438077).
+INFO - Failed to relocalise - max at 224 600 (score: 0.513106).
+INFO - Failed to relocalise - max at 484 630 (score: 0.455592).
+INFO - Failed to relocalise - max at 224 600 (score: 0.514705).
+INFO - Failed to relocalise - max at 484 630 (score: 0.484462).
+INFO - Failed to relocalise - max at 224 602 (score: 0.509065).
+INFO - Failed to relocalise - max at 476 636 (score: 0.389919).
+INFO - Failed to relocalise - max at 478 636 (score: 0.392651).
+INFO - Failed to relocalise - max at 214 606 (score: 0.462632).
+INFO - Failed to relocalise - max at 478 636 (score: 0.478592).
+INFO - Failed to relocalise - max at 226 600 (score: 0.465484).
+INFO - Failed to relocalise - max at 478 636 (score: 0.519647).
+INFO - Failed to relocalise - max at 216 606 (score: 0.481931).
+INFO - Failed to relocalise - max at 480 636 (score: 0.528075).
+INFO - Failed to relocalise - max at 218 606 (score: 0.505253).
+INFO - Failed to relocalise - max at 482 634 (score: 0.502909).
+INFO - Failed to relocalise - max at 210 598 (score: 0.537756).
+INFO - Failed to relocalise - max at 210 596 (score: 0.607031).
+INFO - Failed to relocalise - max at 470 628 (score: 0.635137).
+INFO - Failed to relocalise - max at 208 598 (score: 0.617548).
+INFO - Failed to relocalise - max at 468 630 (score: 0.627043).
+INFO - Failed to relocalise - max at 208 600 (score: 0.648729).
+INFO - Failed to relocalise - max at 466 630 (score: 0.660676).
+INFO - Failed to relocalise - max at 206 600 (score: 0.666104).
+INFO - Failed to relocalise - max at 464 632 (score: 0.677123).
+INFO - Relocalised at 204 602 (score: 0.724312).
+INFO - Relocalised at 462 634 (score: 0.708623).
+WARN - Lost.
+INFO - NCC value: 0.436804 (thresh 0.6).
+INFO - Failed to relocalise - max at 180 604 (score: 0.5133).
+INFO - Failed to relocalise - max at 180 606 (score: 0.513155).
+INFO - Failed to relocalise - max at 182 606 (score: 0.519838).
+INFO - Failed to relocalise - max at 182 608 (score: 0.511206).
+INFO - Failed to relocalise - max at 182 610 (score: 0.493848).
+INFO - Failed to relocalise - max at 172 602 (score: 0.55555).
+INFO - Failed to relocalise - max at 182 608 (score: 0.436645).
+INFO - Relocalised at 168 602 (score: 0.7459).
+WARN - Lost.
+INFO - NCC value: 0.578008 (thresh 0.6).
+INFO - Failed to relocalise - max at 120 534 (score: 0.381143).
+INFO - Failed to relocalise - max at 122 534 (score: 0.505295).
+INFO - Failed to relocalise - max at 124 536 (score: 0.513021).
+INFO - Failed to relocalise - max at 124 536 (score: 0.525736).
+INFO - Failed to relocalise - max at 124 538 (score: 0.48792).
+INFO - Failed to relocalise - max at 122 536 (score: 0.363238).
+INFO - Failed to relocalise - max at 122 536 (score: 0.342133).
+INFO - Failed to relocalise - max at 118 540 (score: 0.494656).
+INFO - Failed to relocalise - max at 110 530 (score: 0.53741).
+INFO - Failed to relocalise - max at 110 530 (score: 0.5421).
+INFO - Failed to relocalise - max at 108 532 (score: 0.587256).
+INFO - Failed to relocalise - max at 106 532 (score: 0.619604).
+INFO - Relocalised at 104 534 (score: 0.735355).
+WARN - Lost.
+INFO - NCC value: 0.491905 (thresh 0.6).
+INFO - Failed to relocalise - max at 338 570 (score: 0.485353).
+INFO - Failed to relocalise - max at 336 570 (score: 0.454334).
+INFO - Failed to relocalise - max at 348 570 (score: 0.423879).
+INFO - Failed to relocalise - max at 346 572 (score: 0.444004).
+INFO - Failed to relocalise - max at 344 570 (score: 0.455927).
+INFO - Failed to relocalise - max at 342 570 (score: 0.444576).
+INFO - Failed to relocalise - max at 340 570 (score: 0.435799).
+INFO - Failed to relocalise - max at 338 568 (score: 0.423646).
+INFO - Failed to relocalise - max at 338 572 (score: 0.457378).
+INFO - Failed to relocalise - max at 302 570 (score: 0.50008).
+INFO - Failed to relocalise - max at 302 574 (score: 0.532259).
+INFO - Failed to relocalise - max at 302 580 (score: 0.555247).
+INFO - Failed to relocalise - max at 302 586 (score: 0.579184).
+INFO - Failed to relocalise - max at 302 594 (score: 0.580167).
+INFO - Failed to relocalise - max at 304 598 (score: 0.55182).
+INFO - Failed to relocalise - max at 326 616 (score: 0.548678).
+INFO - Failed to relocalise - max at 326 622 (score: 0.52018).
+INFO - Failed to relocalise - max at 328 622 (score: 0.565134).
+INFO - Failed to relocalise - max at 328 624 (score: 0.610634).
+INFO - Failed to relocalise - max at 332 608 (score: 0.452005).
+INFO - Failed to relocalise - max at 330 606 (score: 0.491868).
+INFO - Failed to relocalise - max at 332 626 (score: 0.266409).
+INFO - Failed to relocalise - max at 332 612 (score: 0.204979).
+INFO - Failed to relocalise - max at 336 612 (score: 0.270948).
+INFO - Failed to relocalise - max at 332 626 (score: 0.451091).
+INFO - Failed to relocalise - max at 338 606 (score: 0.424591).
+INFO - Failed to relocalise - max at 336 606 (score: 0.461425).
+INFO - Failed to relocalise - max at 298 604 (score: 0.46459).
+INFO - Failed to relocalise - max at 308 616 (score: 0.56374).
+INFO - Failed to relocalise - max at 306 616 (score: 0.534953).
+INFO - Failed to relocalise - max at 304 612 (score: 0.60365).
+INFO - Failed to relocalise - max at 302 610 (score: 0.666347).
+INFO - Relocalised at 300 608 (score: 0.700753).
+WARN - Lost.
+INFO - NCC value: 0.518679 (thresh 0.6).
+INFO - Failed to relocalise - max at 46 578 (score: 0.491315).
+INFO - Failed to relocalise - max at 46 578 (score: 0.485612).
+INFO - Failed to relocalise - max at 36 568 (score: 0.483871).
+INFO - Failed to relocalise - max at 44 572 (score: 0.472277).
+INFO - Failed to relocalise - max at 44 568 (score: 0.475384).
+INFO - Failed to relocalise - max at 54 576 (score: 0.469803).
+INFO - Failed to relocalise - max at 42 562 (score: 0.465455).
+INFO - Failed to relocalise - max at 52 568 (score: 0.489763).
+INFO - Failed to relocalise - max at 52 564 (score: 0.461327).
+INFO - Failed to relocalise - max at 50 560 (score: 0.464621).
+INFO - Failed to relocalise - max at 50 556 (score: 0.474342).
+INFO - Failed to relocalise - max at 48 552 (score: 0.469101).
+INFO - Failed to relocalise - max at 48 550 (score: 0.468907).
+INFO - Failed to relocalise - max at 48 546 (score: 0.462288).
+WARN - Lost.
+INFO - NCC value: 0.475462 (thresh 0.6).
+INFO - Failed to relocalise - max at 46 544 (score: 0.460635).
+INFO - Failed to relocalise - max at 280 574 (score: 0.501879).
+INFO - Failed to relocalise - max at 46 540 (score: 0.467391).
+INFO - Failed to relocalise - max at 280 570 (score: 0.526541).
+INFO - Failed to relocalise - max at 46 536 (score: 0.458199).
+INFO - Failed to relocalise - max at 288 540 (score: 0.540377).
+INFO - Failed to relocalise - max at 36 506 (score: -0.113508).
+INFO - Failed to relocalise - max at 288 538 (score: 0.57388).
+INFO - Failed to relocalise - max at 38 496 (score: 0.404358).
+INFO - Failed to relocalise - max at 270 522 (score: 0.558256).
+INFO - Failed to relocalise - max at 30 492 (score: 0.462077).
+INFO - Failed to relocalise - max at 286 526 (score: 0.584189).
+INFO - Failed to relocalise - max at 28 486 (score: 0.527476).
+INFO - Failed to relocalise - max at 286 522 (score: 0.693581).
+INFO - Failed to relocalise - max at 32 504 (score: 0.465039).
+INFO - Relocalised at 294 530 (score: 0.728193).
+INFO - Failed to relocalise - max at 32 504 (score: 0.524975).
+INFO - Failed to relocalise - max at 28 502 (score: 0.542113).
+WARN - Lost.
+INFO - NCC value: 0.354155 (thresh 0.6).
+INFO - Failed to relocalise - max at 28 504 (score: 0.53066).
+INFO - Failed to relocalise - max at 282 500 (score: 0.692647).
+INFO - Failed to relocalise - max at 42 506 (score: 0.505765).
+INFO - Failed to relocalise - max at 280 496 (score: 0.692983).
+INFO - Failed to relocalise - max at 30 456 (score: 0.501575).
+INFO - Relocalised at 280 490 (score: 0.711534).
+INFO - Failed to relocalise - max at 28 488 (score: 0.480355).
+INFO - Failed to relocalise - max at 30 448 (score: 0.479989).
+INFO - Failed to relocalise - max at 28 476 (score: 0.467924).
+INFO - Failed to relocalise - max at 28 470 (score: 0.461022).
+INFO - Failed to relocalise - max at 30 464 (score: 0.410518).
+INFO - Failed to relocalise - max at 36 430 (score: 0.326632).
+INFO - Failed to relocalise - max at 34 424 (score: 0.321733).
+INFO - Failed to relocalise - max at 34 448 (score: 0.17497).
+INFO - Failed to relocalise - max at 34 442 (score: 0.139586).
+INFO - Failed to relocalise - max at 34 434 (score: -0.0528131).
+INFO - Failed to relocalise - max at 534 170 (score: 0.416823).
+INFO - Failed to relocalise - max at 526 170 (score: 0.436014).
+INFO - Failed to relocalise - max at 650 318 (score: 0.2402).
+INFO - Failed to relocalise - max at 592 298 (score: 0.334614).
+INFO - Failed to relocalise - max at 650 328 (score: 0.288059).
+INFO - Failed to relocalise - max at 602 420 (score: 0.366095).
+INFO - Failed to relocalise - max at 644 378 (score: 0.278085).
+INFO - Failed to relocalise - max at 606 418 (score: 0.326593).
+INFO - Failed to relocalise - max at 642 444 (score: 0.272401).
+INFO - Failed to relocalise - max at 632 548 (score: 0.142942).
+INFO - Failed to relocalise - max at 620 516 (score: 0.366312).
+INFO - Failed to relocalise - max at 630 532 (score: 0.138376).
+INFO - Failed to relocalise - max at 626 552 (score: 0.1437).
+INFO - Failed to relocalise - max at 630 534 (score: 0.163309).
+INFO - Failed to relocalise - max at 36 476 (score: 0.330184).
+INFO - Failed to relocalise - max at 36 480 (score: 0.433261).
+INFO - Failed to relocalise - max at 38 484 (score: 0.462586).
+INFO - Failed to relocalise - max at 38 488 (score: 0.459175).
+INFO - Failed to relocalise - max at 40 492 (score: 0.452033).
+INFO - Failed to relocalise - max at 42 494 (score: 0.448556).
+INFO - Failed to relocalise - max at 44 496 (score: 0.466672).
+INFO - Failed to relocalise - max at 30 498 (score: 0.433823).
+INFO - Failed to relocalise - max at 32 498 (score: 0.44322).
+INFO - Failed to relocalise - max at 38 500 (score: 0.485984).
+INFO - Failed to relocalise - max at 38 502 (score: 0.573828).
+INFO - Failed to relocalise - max at 38 502 (score: 0.607304).
+INFO - Failed to relocalise - max at 36 500 (score: 0.424884).
+INFO - Failed to relocalise - max at 34 486 (score: 0.452314).
+INFO - Failed to relocalise - max at 30 476 (score: 0.487802).
+WARN - Lost.
+INFO - NCC value: 0.530939 (thresh 0.6).
+INFO - Failed to relocalise - max at 30 478 (score: 0.50351).
+INFO - Failed to relocalise - max at 302 512 (score: 0.483376).
+INFO - Failed to relocalise - max at 30 482 (score: 0.512862).
+INFO - Failed to relocalise - max at 302 516 (score: 0.462039).
+INFO - Failed to relocalise - max at 30 486 (score: 0.514858).
+INFO - Failed to relocalise - max at 300 518 (score: 0.458474).
+INFO - Failed to relocalise - max at 30 490 (score: 0.517469).
+INFO - Failed to relocalise - max at 300 520 (score: 0.46513).
+INFO - Failed to relocalise - max at 30 494 (score: 0.484524).
+INFO - Failed to relocalise - max at 274 524 (score: 0.504905).
+INFO - Failed to relocalise - max at 34 498 (score: 0.235537).
+INFO - Failed to relocalise - max at 276 524 (score: 0.500765).
+INFO - Failed to relocalise - max at 296 526 (score: 0.482794).
+INFO - Failed to relocalise - max at 296 528 (score: 0.504385).
+INFO - Failed to relocalise - max at 284 528 (score: 0.510072).
+INFO - Failed to relocalise - max at 296 562 (score: 0.403475).
+INFO - Failed to relocalise - max at 286 554 (score: 0.58965).
+INFO - Relocalised at 288 556 (score: 0.70439).
+INFO - Failed to relocalise - max at 50 540 (score: 0.451007).
+INFO - Failed to relocalise - max at 54 542 (score: 0.437391).
+INFO - Failed to relocalise - max at 58 544 (score: 0.441654).
+WARN - Lost.
+INFO - NCC value: 0.47394 (thresh 0.6).
+INFO - Failed to relocalise - max at 38 538 (score: 0.594522).
+INFO - Relocalised at 304 566 (score: 0.767237).
+INFO - Failed to relocalise - max at 40 540 (score: 0.69499).
+WARN - Lost.
+INFO - NCC value: 0.511344 (thresh 0.6).
+INFO - Relocalised at 44 542 (score: 0.848112).
+INFO - Failed to relocalise - max at 296 578 (score: 0.47321).
+INFO - Failed to relocalise - max at 310 552 (score: 0.541459).
+INFO - Failed to relocalise - max at 316 560 (score: 0.574928).
+INFO - Failed to relocalise - max at 304 576 (score: 0.545159).
+INFO - Failed to relocalise - max at 330 586 (score: 0.568896).
+INFO - Relocalised at 332 590 (score: 0.733658).
+WARN - Lost.
+INFO - NCC value: 0.598947 (thresh 0.6).
+INFO - Relocalised at 528 646 (score: 0.82262).
+WARN - Lost.
+INFO - NCC value: 0.454829 (thresh 0.6).
+INFO - Failed to relocalise - max at 122 572 (score: 0.503076).
+INFO - Failed to relocalise - max at 124 574 (score: 0.520156).
+INFO - Failed to relocalise - max at 128 574 (score: 0.443416).
+INFO - Failed to relocalise - max at 134 578 (score: 0.401345).
+INFO - Failed to relocalise - max at 134 572 (score: 0.295888).
+INFO - Failed to relocalise - max at 138 578 (score: 0.351651).
+INFO - Failed to relocalise - max at 136 578 (score: 0.399809).
+INFO - Failed to relocalise - max at 134 576 (score: 0.293308).
+INFO - Failed to relocalise - max at 134 576 (score: 0.31354).
+INFO - Failed to relocalise - max at 122 568 (score: 0.349097).
+INFO - Failed to relocalise - max at 136 572 (score: 0.295852).
+INFO - Failed to relocalise - max at 134 576 (score: 0.321116).
+INFO - Failed to relocalise - max at 166 552 (score: 0.454541).
+INFO - Failed to relocalise - max at 136 584 (score: 0.425709).
+INFO - Failed to relocalise - max at 168 564 (score: 0.559297).
+INFO - Failed to relocalise - max at 170 560 (score: 0.514225).
+INFO - Failed to relocalise - max at 166 536 (score: 0.60719).
+INFO - Failed to relocalise - max at 168 536 (score: 0.524721).
+INFO - Failed to relocalise - max at 168 538 (score: 0.506328).
+INFO - Failed to relocalise - max at 172 554 (score: 0.346916).
+INFO - Failed to relocalise - max at 172 552 (score: 0.33298).
+INFO - Failed to relocalise - max at 170 552 (score: 0.309632).
+INFO - Failed to relocalise - max at 170 552 (score: 0.313837).
+INFO - Failed to relocalise - max at 174 546 (score: 0.499658).
+INFO - Failed to relocalise - max at 168 548 (score: 0.345674).
+INFO - Failed to relocalise - max at 170 550 (score: 0.34615).
+INFO - Failed to relocalise - max at 170 546 (score: 0.367317).
+INFO - Failed to relocalise - max at 160 552 (score: 0.384966).
+INFO - Failed to relocalise - max at 166 546 (score: 0.376641).
+INFO - Failed to relocalise - max at 126 536 (score: 0.465273).
+INFO - Failed to relocalise - max at 128 534 (score: 0.436217).
+INFO - Failed to relocalise - max at 128 532 (score: 0.395767).
+INFO - Failed to relocalise - max at 136 536 (score: 0.468585).
+INFO - Failed to relocalise - max at 128 538 (score: 0.325152).
+INFO - Failed to relocalise - max at 134 534 (score: 0.441896).
+INFO - Failed to relocalise - max at 132 536 (score: 0.596287).
+INFO - Failed to relocalise - max at 130 536 (score: 0.678525).
+INFO - Relocalised at 126 536 (score: 0.77094).
+WARN - Lost.
+INFO - NCC value: 0.582776 (thresh 0.6).
+INFO - Failed to relocalise - max at 108 520 (score: 0.5528).
+INFO - Failed to relocalise - max at 122 532 (score: 0.547126).
+INFO - Failed to relocalise - max at 102 522 (score: 0.48277).
+INFO - Failed to relocalise - max at 92 510 (score: 0.472768).
+INFO - Failed to relocalise - max at 92 504 (score: 0.501654).
+INFO - Failed to relocalise - max at 94 502 (score: 0.50564).
+INFO - Failed to relocalise - max at 94 506 (score: 0.397555).
+INFO - Failed to relocalise - max at 104 496 (score: 0.224909).
+INFO - Failed to relocalise - max at 94 494 (score: 0.244542).
+WARN - Lost.
+INFO - NCC value: 0.477989 (thresh 0.6).
+INFO - Failed to relocalise - max at 386 490 (score: 0.558536).
+INFO - Failed to relocalise - max at 388 508 (score: 0.325824).
+INFO - Failed to relocalise - max at 384 488 (score: 0.358992).
+INFO - Failed to relocalise - max at 386 490 (score: 0.332964).
+INFO - Failed to relocalise - max at 380 518 (score: 0.351877).
+INFO - Failed to relocalise - max at 382 518 (score: 0.38088).
+INFO - Failed to relocalise - max at 392 508 (score: 0.439876).
+INFO - Failed to relocalise - max at 384 514 (score: 0.43368).
+INFO - Failed to relocalise - max at 386 512 (score: 0.48453).
+INFO - Failed to relocalise - max at 388 508 (score: 0.512077).
+INFO - Failed to relocalise - max at 388 518 (score: 0.279769).
+INFO - Failed to relocalise - max at 386 510 (score: 0.378599).
+INFO - Failed to relocalise - max at 392 514 (score: 0.464455).
+INFO - Failed to relocalise - max at 390 514 (score: 0.526352).
+INFO - Failed to relocalise - max at 390 508 (score: 0.494862).
+INFO - Failed to relocalise - max at 390 510 (score: 0.560892).
+INFO - Failed to relocalise - max at 388 510 (score: 0.626126).
+INFO - Failed to relocalise - max at 384 512 (score: 0.663002).
+INFO - Failed to relocalise - max at 382 516 (score: 0.693008).
+INFO - Failed to relocalise - max at 378 518 (score: 0.69305).
+INFO - Relocalised at 380 518 (score: 0.843594).
+INFO - Failed to relocalise - max at 88 458 (score: 0.523177).
+INFO - Failed to relocalise - max at 86 456 (score: 0.56385).
+INFO - Failed to relocalise - max at 96 446 (score: 0.580996).
+INFO - Failed to relocalise - max at 96 442 (score: 0.650831).
+INFO - Failed to relocalise - max at 98 440 (score: 0.675404).
+INFO - Failed to relocalise - max at 98 436 (score: 0.694661).
+INFO - Relocalised at 100 434 (score: 0.722559).
+WARN - Lost.
+INFO - NCC value: 0.490029 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.382306 (thresh 0.6).
+INFO - Failed to relocalise - max at 398 402 (score: 0.520468).
+INFO - Failed to relocalise - max at 96 378 (score: 0.500522).
+INFO - Failed to relocalise - max at 360 400 (score: 0.530313).
+INFO - Failed to relocalise - max at 94 374 (score: 0.533555).
+INFO - Failed to relocalise - max at 364 400 (score: 0.543377).
+INFO - Failed to relocalise - max at 98 372 (score: 0.561294).
+INFO - Failed to relocalise - max at 368 396 (score: 0.543351).
+INFO - Failed to relocalise - max at 130 368 (score: 0.553072).
+INFO - Failed to relocalise - max at 370 394 (score: 0.474202).
+INFO - Failed to relocalise - max at 120 366 (score: 0.458729).
+INFO - Failed to relocalise - max at 356 350 (score: 0.441202).
+INFO - Failed to relocalise - max at 352 350 (score: 0.414953).
+INFO - Failed to relocalise - max at 354 338 (score: 0.50169).
+INFO - Failed to relocalise - max at 352 334 (score: 0.51022).
+INFO - Failed to relocalise - max at 366 368 (score: 0.524765).
+INFO - Failed to relocalise - max at 366 362 (score: 0.496428).
+INFO - Failed to relocalise - max at 352 316 (score: 0.575158).
+INFO - Failed to relocalise - max at 352 316 (score: 0.666352).
+INFO - Failed to relocalise - max at 352 314 (score: 0.558236).
+INFO - Failed to relocalise - max at 368 342 (score: 0.490332).
+INFO - Failed to relocalise - max at 368 338 (score: 0.49325).
+INFO - Failed to relocalise - max at 368 332 (score: 0.519432).
+INFO - Failed to relocalise - max at 96 258 (score: 0.396914).
+INFO - Failed to relocalise - max at 364 296 (score: 0.538853).
+INFO - Failed to relocalise - max at 92 262 (score: 0.57912).
+INFO - Failed to relocalise - max at 360 288 (score: 0.650832).
+INFO - Failed to relocalise - max at 90 260 (score: 0.681548).
+INFO - Relocalised at 360 284 (score: 0.710756).
+INFO - Relocalised at 90 254 (score: 0.765711).
+WARN - Lost.
+INFO - NCC value: 0.441722 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.524598 (thresh 0.6).
+INFO - Failed to relocalise - max at 342 286 (score: 0.485536).
+INFO - Failed to relocalise - max at 68 264 (score: 0.688573).
+INFO - Failed to relocalise - max at 348 320 (score: 0.446884).
+INFO - Failed to relocalise - max at 70 266 (score: 0.610022).
+INFO - Failed to relocalise - max at 322 286 (score: 0.440432).
+INFO - Failed to relocalise - max at 68 264 (score: 0.361989).
+INFO - Failed to relocalise - max at 350 326 (score: 0.436427).
+INFO - Failed to relocalise - max at 68 266 (score: 0.433359).
+INFO - Failed to relocalise - max at 344 288 (score: 0.458572).
+INFO - Failed to relocalise - max at 74 256 (score: 0.442109).
+INFO - Failed to relocalise - max at 358 322 (score: 0.516237).
+INFO - Failed to relocalise - max at 358 324 (score: 0.503557).
+INFO - Failed to relocalise - max at 340 318 (score: 0.69966).
+INFO - Relocalised at 340 322 (score: 0.841457).
+INFO - Failed to relocalise - max at 56 298 (score: 0.500917).
+WARN - Lost.
+INFO - NCC value: 0.44183 (thresh 0.6).
+INFO - Failed to relocalise - max at 342 398 (score: 0.541254).
+INFO - Failed to relocalise - max at 92 368 (score: 0.475581).
+INFO - Failed to relocalise - max at 350 380 (score: 0.568914).
+INFO - Failed to relocalise - max at 108 368 (score: 0.439627).
+INFO - Failed to relocalise - max at 334 402 (score: 0.525646).
+INFO - Failed to relocalise - max at 86 368 (score: 0.429548).
+INFO - Failed to relocalise - max at 372 404 (score: 0.565558).
+INFO - Failed to relocalise - max at 86 366 (score: 0.57395).
+INFO - Relocalised at 352 398 (score: 0.769937).
+INFO - Relocalised at 86 370 (score: 0.75118).
+WARN - Lost.
+INFO - NCC value: 0.465263 (thresh 0.6).
+INFO - Failed to relocalise - max at 88 444 (score: 0.499179).
+INFO - Failed to relocalise - max at 88 448 (score: 0.519885).
+INFO - Failed to relocalise - max at 90 452 (score: 0.489896).
+INFO - Failed to relocalise - max at 90 456 (score: 0.508296).
+INFO - Failed to relocalise - max at 90 460 (score: 0.50119).
+INFO - Failed to relocalise - max at 90 464 (score: 0.491434).
+INFO - Failed to relocalise - max at 88 458 (score: 0.49285).
+INFO - Failed to relocalise - max at 88 462 (score: 0.506674).
+INFO - Failed to relocalise - max at 90 464 (score: 0.504138).
+INFO - Failed to relocalise - max at 90 468 (score: 0.500785).
+INFO - Failed to relocalise - max at 94 490 (score: 0.599054).
+INFO - Failed to relocalise - max at 94 490 (score: 0.643595).
+INFO - Failed to relocalise - max at 92 488 (score: 0.654592).
+INFO - Failed to relocalise - max at 92 488 (score: 0.649387).
+INFO - Failed to relocalise - max at 92 486 (score: 0.68939).
+INFO - Relocalised at 90 484 (score: 0.705087).
+WARN - Lost.
+INFO - NCC value: 0.472572 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.384046 (thresh 0.6).
+INFO - Failed to relocalise - max at 356 400 (score: 0.519588).
+INFO - Failed to relocalise - max at 74 364 (score: 0.599421).
+INFO - Failed to relocalise - max at 332 380 (score: 0.592718).
+INFO - Failed to relocalise - max at 84 376 (score: 0.47816).
+INFO - Failed to relocalise - max at 332 374 (score: 0.529563).
+INFO - Failed to relocalise - max at 92 368 (score: 0.533248).
+INFO - Failed to relocalise - max at 332 368 (score: 0.579285).
+INFO - Failed to relocalise - max at 72 368 (score: 0.538471).
+INFO - Relocalised at 330 362 (score: 0.702844).
+INFO - Failed to relocalise - max at 60 336 (score: 0.394729).
+INFO - Failed to relocalise - max at 60 332 (score: 0.59436).
+INFO - Failed to relocalise - max at 60 326 (score: 0.6204).
+INFO - Failed to relocalise - max at 58 320 (score: 0.630319).
+INFO - Failed to relocalise - max at 58 314 (score: 0.693333).
+INFO - Failed to relocalise - max at 58 310 (score: 0.666572).
+INFO - Failed to relocalise - max at 56 306 (score: 0.680238).
+INFO - Relocalised at 56 304 (score: 0.708651).
+WARN - Lost.
+INFO - NCC value: 0.551044 (thresh 0.6).
+INFO - Failed to relocalise - max at 54 300 (score: 0.529782).
+INFO - Relocalised at 54 308 (score: 0.745488).
+WARN - Lost.
+INFO - NCC value: 0.354507 (thresh 0.6).
+INFO - Relocalised at 52 310 (score: 0.703985).
+WARN - Lost.
+INFO - NCC value: 0.474039 (thresh 0.6).
+INFO - Failed to relocalise - max at 330 348 (score: 0.484775).
+WARN - Lost.
+INFO - NCC value: 0.599522 (thresh 0.6).
+INFO - Failed to relocalise - max at 324 352 (score: 0.485679).
+INFO - Failed to relocalise - max at 44 320 (score: 0.693984).
+INFO - Failed to relocalise - max at 322 352 (score: 0.481232).
+INFO - Failed to relocalise - max at 44 320 (score: 0.67541).
+INFO - Failed to relocalise - max at 322 352 (score: 0.475985).
+INFO - Relocalised at 42 322 (score: 0.708241).
+INFO - Failed to relocalise - max at 336 352 (score: 0.444967).
+INFO - Failed to relocalise - max at 334 352 (score: 0.452503).
+INFO - Failed to relocalise - max at 332 350 (score: 0.403252).
+INFO - Failed to relocalise - max at 330 350 (score: 0.402535).
+INFO - Failed to relocalise - max at 328 350 (score: 0.3769).
+INFO - Failed to relocalise - max at 324 348 (score: 0.30925).
+INFO - Failed to relocalise - max at 322 350 (score: 0.261568).
+INFO - Failed to relocalise - max at 324 354 (score: 0.32514).
+WARN - Lost.
+INFO - NCC value: 0.55794 (thresh 0.6).
+INFO - Failed to relocalise - max at 40 334 (score: 0.657741).
+INFO - Relocalised at 40 334 (score: 0.83008).
+INFO - Failed to relocalise - max at 290 358 (score: 0.396527).
+INFO - Failed to relocalise - max at 292 358 (score: 0.449374).
+INFO - Failed to relocalise - max at 302 362 (score: 0.595876).
+INFO - Failed to relocalise - max at 320 360 (score: 0.628642).
+INFO - Relocalised at 322 360 (score: 0.725232).
+WARN - Lost.
+INFO - NCC value: 0.357842 (thresh 0.6).
+INFO - Failed to relocalise - max at 64 328 (score: 0.520471).
+INFO - Failed to relocalise - max at 64 328 (score: 0.577448).
+WARN - Lost.
+INFO - NCC value: 0.470973 (thresh 0.6).
+INFO - Failed to relocalise - max at 364 356 (score: 0.663147).
+INFO - Failed to relocalise - max at 356 374 (score: 0.485693).
+INFO - Failed to relocalise - max at 358 344 (score: 0.472675).
+INFO - Failed to relocalise - max at 358 362 (score: 0.460408).
+INFO - Failed to relocalise - max at 360 362 (score: 0.49508).
+INFO - Failed to relocalise - max at 378 398 (score: 0.514146).
+INFO - Failed to relocalise - max at 372 400 (score: 0.585454).
+INFO - Failed to relocalise - max at 138 370 (score: 0.390408).
+INFO - Failed to relocalise - max at 368 400 (score: 0.54277).
+INFO - Failed to relocalise - max at 136 376 (score: 0.408136).
+INFO - Failed to relocalise - max at 406 404 (score: 0.551901).
+INFO - Failed to relocalise - max at 140 376 (score: 0.561454).
+INFO - Relocalised at 388 398 (score: 0.732078).
+INFO - Relocalised at 120 368 (score: 0.731198).
+WARN - Lost.
+INFO - NCC value: 0.474536 (thresh 0.6).
+INFO - Failed to relocalise - max at 392 402 (score: 0.463871).
+WARN - Lost.
+INFO - NCC value: 0.576225 (thresh 0.6).
+INFO - Failed to relocalise - max at 392 400 (score: 0.533874).
+INFO - Failed to relocalise - max at 130 374 (score: 0.548363).
+INFO - Failed to relocalise - max at 396 398 (score: 0.556865).
+INFO - Failed to relocalise - max at 132 370 (score: 0.545724).
+INFO - Failed to relocalise - max at 416 396 (score: 0.51895).
+INFO - Failed to relocalise - max at 150 366 (score: 0.536636).
+INFO - Failed to relocalise - max at 162 328 (score: 0.261725).
+INFO - Failed to relocalise - max at 168 322 (score: 0.326723).
+INFO - Failed to relocalise - max at 168 324 (score: 0.379213).
+INFO - Failed to relocalise - max at 170 326 (score: 0.390579).
+INFO - Failed to relocalise - max at 170 326 (score: 0.368754).
+INFO - Failed to relocalise - max at 162 332 (score: 0.479193).
+INFO - Failed to relocalise - max at 170 342 (score: 0.631104).
+INFO - Failed to relocalise - max at 170 344 (score: 0.649052).
+INFO - Failed to relocalise - max at 162 336 (score: 0.671928).
+INFO - Failed to relocalise - max at 164 344 (score: 0.565487).
+INFO - Failed to relocalise - max at 420 398 (score: 0.534617).
+INFO - Failed to relocalise - max at 164 346 (score: 0.49336).
+INFO - Failed to relocalise - max at 416 402 (score: 0.579454).
+INFO - Failed to relocalise - max at 164 356 (score: 0.443589).
+INFO - Failed to relocalise - max at 412 402 (score: 0.575981).
+INFO - Failed to relocalise - max at 184 376 (score: 0.43899).
+INFO - Failed to relocalise - max at 432 396 (score: 0.618411).
+INFO - Failed to relocalise - max at 168 366 (score: 0.612912).
+INFO - Relocalised at 432 400 (score: 0.803475).
+INFO - Relocalised at 168 370 (score: 0.783369).
+WARN - Lost.
+INFO - NCC value: 0.430928 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.510424 (thresh 0.6).
+INFO - Failed to relocalise - max at 436 402 (score: 0.476702).
+INFO - Failed to relocalise - max at 194 374 (score: 0.505965).
+INFO - Failed to relocalise - max at 422 402 (score: 0.539912).
+INFO - Failed to relocalise - max at 174 352 (score: 0.637759).
+INFO - Failed to relocalise - max at 426 400 (score: 0.567877).
+INFO - Failed to relocalise - max at 174 348 (score: 0.59138).
+INFO - Failed to relocalise - max at 448 396 (score: 0.524185).
+INFO - Failed to relocalise - max at 172 340 (score: 0.550779).
+INFO - Failed to relocalise - max at 444 396 (score: 0.469939).
+INFO - Relocalised at 170 334 (score: 0.705393).
+WARN - Lost.
+INFO - NCC value: 0.567712 (thresh 0.6).
+INFO - Failed to relocalise - max at 164 292 (score: 0.505266).
+INFO - Failed to relocalise - max at 174 298 (score: 0.471936).
+INFO - Failed to relocalise - max at 172 294 (score: 0.455046).
+INFO - Failed to relocalise - max at 172 288 (score: 0.376901).
+INFO - Failed to relocalise - max at 428 294 (score: 0.427933).
+INFO - Failed to relocalise - max at 166 262 (score: 0.38459).
+INFO - Failed to relocalise - max at 426 294 (score: 0.54287).
+INFO - Failed to relocalise - max at 166 260 (score: 0.442574).
+INFO - Failed to relocalise - max at 426 294 (score: 0.553405).
+INFO - Failed to relocalise - max at 426 292 (score: 0.630286).
+INFO - Failed to relocalise - max at 160 264 (score: 0.5317).
+INFO - Failed to relocalise - max at 426 290 (score: 0.672314).
+INFO - Failed to relocalise - max at 160 260 (score: 0.640495).
+INFO - Relocalised at 426 286 (score: 0.725548).
+INFO - Relocalised at 158 254 (score: 0.756542).
+WARN - Lost.
+INFO - NCC value: 0.479492 (thresh 0.6).
+INFO - Failed to relocalise - max at 672 88 (score: 0.531866).
+INFO - Failed to relocalise - max at 594 298 (score: 0.501895).
+INFO - Failed to relocalise - max at 532 170 (score: 0.437285).
+INFO - Failed to relocalise - max at 536 170 (score: 0.430123).
+INFO - Failed to relocalise - max at 534 170 (score: 0.402085).
+INFO - Failed to relocalise - max at 536 170 (score: 0.41683).
+INFO - Failed to relocalise - max at 476 230 (score: 0.325381).
+INFO - Failed to relocalise - max at 452 254 (score: 0.277879).
+INFO - Failed to relocalise - max at 648 344 (score: 0.280955).
+INFO - Failed to relocalise - max at 594 298 (score: 0.347116).
+INFO - Failed to relocalise - max at 652 316 (score: 0.294474).
+INFO - Failed to relocalise - max at 596 416 (score: 0.493559).
+INFO - Failed to relocalise - max at 644 376 (score: 0.261135).
+INFO - Failed to relocalise - max at 598 418 (score: 0.461721).
+INFO - Failed to relocalise - max at 602 488 (score: 0.433868).
+INFO - Failed to relocalise - max at 616 524 (score: 0.355545).
+INFO - Failed to relocalise - max at 646 538 (score: 0.133529).
+INFO - Failed to relocalise - max at 622 514 (score: 0.387864).
+INFO - Failed to relocalise - max at 484 728 (score: 0.406698).
+INFO - Failed to relocalise - max at 528 722 (score: 0.446503).
+INFO - Failed to relocalise - max at 162 214 (score: 0.316885).
+INFO - Failed to relocalise - max at 162 216 (score: 0.214887).
+INFO - Failed to relocalise - max at 160 220 (score: 0.227842).
+INFO - Failed to relocalise - max at 158 212 (score: 0.44357).
+INFO - Failed to relocalise - max at 154 208 (score: 0.298038).
+INFO - Failed to relocalise - max at 188 192 (score: 0.345101).
+INFO - Failed to relocalise - max at 186 194 (score: 0.347169).
+INFO - Failed to relocalise - max at 158 188 (score: 0.590258).
+INFO - Failed to relocalise - max at 156 188 (score: 0.631324).
+INFO - Relocalised at 152 184 (score: 0.717172).
+WARN - Lost.
+INFO - NCC value: 0.450539 (thresh 0.6).
+INFO - Failed to relocalise - max at 350 284 (score: 0.489644).
+INFO - Failed to relocalise - max at 330 288 (score: 0.479367).
+WARN - Lost.
+INFO - NCC value: 0.539364 (thresh 0.6).
+INFO - Failed to relocalise - max at 352 288 (score: 0.43251).
+INFO - Failed to relocalise - max at 82 256 (score: 0.511859).
+INFO - Failed to relocalise - max at 350 288 (score: 0.362273).
+INFO - Failed to relocalise - max at 352 288 (score: 0.369159).
+INFO - Failed to relocalise - max at 78 262 (score: 0.412868).
+INFO - Failed to relocalise - max at 352 288 (score: 0.360212).
+INFO - Failed to relocalise - max at 352 288 (score: 0.335707).
+INFO - Failed to relocalise - max at 336 292 (score: 0.482278).
+INFO - Failed to relocalise - max at 86 260 (score: 0.228301).
+INFO - Failed to relocalise - max at 334 292 (score: 0.585991).
+INFO - Failed to relocalise - max at 60 254 (score: 0.290775).
+INFO - Failed to relocalise - max at 330 292 (score: 0.678151).
+INFO - Failed to relocalise - max at 62 262 (score: 0.5924).
+INFO - Failed to relocalise - max at 328 292 (score: 0.697352).
+INFO - Failed to relocalise - max at 58 262 (score: 0.697573).
+INFO - Failed to relocalise - max at 326 290 (score: 0.673324).
+INFO - Failed to relocalise - max at 56 260 (score: 0.691415).
+INFO - Failed to relocalise - max at 324 288 (score: 0.679625).
+INFO - Relocalised at 52 258 (score: 0.711837).
+INFO - Relocalised at 322 286 (score: 0.704283).
+WARN - Lost.
+INFO - NCC value: 0.492876 (thresh 0.6).
+WARN - Lost.
+INFO - NCC value: 0.551175 (thresh 0.6).
+INFO - Failed to relocalise - max at 296 294 (score: 0.580741).
+INFO - Failed to relocalise - max at 26 262 (score: 0.60708).
+INFO - Failed to relocalise - max at 306 282 (score: 0.481768).
+INFO - Failed to relocalise - max at 298 290 (score: 0.688966).
+INFO - Failed to relocalise - max at 28 260 (score: 0.698931).
+INFO - Relocalised at 298 288 (score: 0.736946).
+INFO - Failed to relocalise - max at 28 254 (score: 0.484528).
+INFO - Relocalised at 28 256 (score: 0.754916).
+WARN - Lost.
+INFO - NCC value: 0 (thresh 0.6).
+INFO - Failed to relocalise - max at 26 252 (score: 0.528157).
+INFO - Failed to relocalise - max at 24 252 (score: 0.540453).
+INFO - Failed to relocalise - max at 24 252 (score: 0.502136).
+INFO - Failed to relocalise - max at 24 252 (score: 0.38687).
+INFO - Failed to relocalise - max at 24 244 (score: 0.329584).
+INFO - Failed to relocalise - max at 642 394 (score: 0.211043).
+INFO - Failed to relocalise - max at 644 364 (score: 0.187644).
+INFO - Failed to relocalise - max at 628 356 (score: 0.0214259).
+INFO - Failed to relocalise - max at 626 446 (score: -0.0186668).
+INFO - Failed to relocalise - max at 642 396 (score: 0.237407).
+INFO - Failed to relocalise - max at 626 380 (score: 0.144605).
+INFO - Failed to relocalise - max at 622 752 (score: 0.399773).
+INFO - Failed to relocalise - max at 636 348 (score: 0.478264).
+INFO - Failed to relocalise - max at 670 744 (score: 0.570208).
+INFO - Failed to relocalise - max at 588 366 (score: 0.691588).
+INFO - Failed to relocalise - max at 588 366 (score: 0.615113).
+INFO - Failed to relocalise - max at 566 374 (score: 0.600807).
+INFO - Failed to relocalise - max at 486 426 (score: 0.616535).
+INFO - Failed to relocalise - max at 564 416 (score: 0.653355).
