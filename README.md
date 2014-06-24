@@ -24,7 +24,7 @@ __Unicap__ (0.9.12)
 
 	sudo apt-get install libunicap2-dev
 
-__Compiling OpenCV on Windows__ (2.4.6)
+__Compiling OpenCV on Linux__ (2.4.6)
 
 	git clone https://github.com/Itseez/opencv.git 
 	git checkout 2.4.6
@@ -32,7 +32,9 @@ __Compiling OpenCV on Windows__ (2.4.6)
 	cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/path/to/opencv/install ..
 	cmake --build . --target install
 
+__Unicap__ (0.9.12)
 
+	sudo apt-get install libunicap2-dev
 
 ### Windows
 
@@ -50,8 +52,7 @@ __OpenCV__ (2.4.6)
 	cd opencv
 	mkdir build && cd build
 	cmake -G"MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="C:\opencv\install" ..
-	cmake --build .
-	cmake --target . install
+	cmake --build . --target install
 
 __MinGW Only__
 
@@ -73,10 +74,9 @@ __Installer__
 
 ## Compiling
 
-## LINUX
-From root directory:
 
 __Linux__
+From root directory:
 
 	$ mkdir build && cd build
 	$ cmake [options] ../
@@ -150,6 +150,9 @@ For contributions to be considered we require that users first read and follow t
 ## Documentation 
 
 In addition to the __help__ tool that can be compiled alongside the app, the documentation can be found in the [Wiki](https://github.com/dysonltd/gts/wiki).
+
+## Ethernet cameras
+The program has been modified to support Ethernet cameras from The imaging source. To use them, it is necessary to write the camera name obtained from GigECam IP configuration program to the UniqueId field of camera.xml in the workbench. 
 
 ## License
 
