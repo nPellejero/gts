@@ -224,6 +224,8 @@ void PostProcessWidget::PostProcessButtonClicked()
 
         const QString coverageMissedName(
                     runConfig.GetAbsoluteFileNameFor( "results/coverage_missed.png" ) );
+        const QString coverageMissedLowResName(
+                    runConfig.GetAbsoluteFileNameFor( "results/coverage_missedLowRes.png" ) );
         const QString coverageColourName(
                     runConfig.GetAbsoluteFileNameFor( "results/coverage_colour.png" ) );
         const QString coverageHistogramName(
@@ -259,6 +261,7 @@ void PostProcessWidget::PostProcessButtonClicked()
                                                       coverageRelativeName.toAscii().data(),     // relativeLogFile
                                                       pixelOffsetsName.toAscii().data(),         // pixelOffsetsFile
                                                       coverageMissedName.toAscii().data(),
+                                                      coverageMissedLowResName.toAscii().data(),
                                                       coverageColourName.toAscii().data(),
                                                       coverageHistogramName.toAscii().data(),
                                                       coverageOverlayName.toAscii().data(),
@@ -302,6 +305,7 @@ const ExitStatus::Flags PostProcessWidget::PostProcess( const WbConfig& postProc
                                                             char*           relativeLogFile,       // -rel
                                                             char*           pixelOffsetsFile,
                                                             char*           coverageMissedFile,
+                                                            char*           coverageMissedFileLowRes,
                                                             char*           coverageColourFile,
                                                             char*           coverageHistogramFile,
                                                             char*           coverageRawFile,
@@ -519,8 +523,10 @@ const ExitStatus::Flags PostProcessWidget::PostProcess( const WbConfig& postProc
                          .arg(travelledDistance / metrics.GetScaleFactor()));
 
             int missCount = coverage.MissedMask( coverageMissedFile );
+            int missCountLowRes = coverage.MissedMask_LowRes( coverageMissedFileLowRes, metrics.GetRadiusPx() );
 
             LOG_INFO(QObject::tr("Missed pixels: %1.").arg(missCount));
+            LOG_INFO(QObject::tr("Missed pixels (Low Res): %1.").arg(missCountLowRes));
 
             // Create a coloured map to
             // indicate repeated coverage.

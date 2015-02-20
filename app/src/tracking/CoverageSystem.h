@@ -65,6 +65,7 @@ public:
 
     void WriteIncrementalCoverage( FILE* fp, unsigned int count = 1 );
     int MissedMask( const char* fileName );
+    int MissedMask_LowRes(const char* fileName, float robotRadiusPx);
 
 private:
 

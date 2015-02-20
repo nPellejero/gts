@@ -563,3 +563,42 @@ int CoverageSystem::MissedMask( const char* fileName )
 
     return count;
 }
+
+/**
+    Create a mask which shows the areas of
+    the floor that were missed completely.
+    And makes an image of the size of the map
+    created internally in the roomba
+ **/
+int CoverageSystem::MissedMask_LowRes( const char* fileName, float robotRadiusPx )
+{
+    int count = -1;
+//     int scale = RobotMetrics::GetRadiusPx()*2/3;
+    int scale = robotRadiusPx*2/3;
+    IplImage* m_cvgMask_lowRes = cvCreateImage( cvSize( cvFloor(m_cvgMask->width/scale),
+                                               cvFloor(m_cvgMask->height/scale) ), IPL_DEPTH_8U, 1 );
+    if ( m_floorMask )
+    {
+        IplImage* dst = cvCreateImage( cvSize( cvFloor(m_cvgMask->width/scale),
+                                               cvFloor(m_cvgMask->height/scale) ), IPL_DEPTH_8U, 1 );
+
+        IplImage* m_floorMask_lowRes = cvCreateImage( cvSize( cvFloor(m_cvgMask->width/scale),
+                                               cvFloor(m_cvgMask->height/scale) ), IPL_DEPTH_8U, 1 );
+
+
+        cvResize(m_cvgMask, m_cvgMask_lowRes, CV_INTER_NN);
+        cvResize(m_floorMask, m_floorMask_lowRes, CV_INTER_NN);
+
+        cvCmpS( m_cvgMask_lowRes, 1, dst, CV_CMP_GE );
+
+        cvSub( m_floorMask_lowRes, dst, dst );
+
+        cvSaveImage( fileName, dst );
+
+        count = cvCountNonZero( dst );
+
+        cvReleaseImage( &dst );
+    }
+
+    return count;
+}

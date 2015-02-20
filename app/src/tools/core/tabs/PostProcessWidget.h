@@ -65,6 +65,7 @@ private:
                                          char*           relativeLogFile,
                                          char*           pixelOffsetsFile,
                                          char*           coverageMissedFile,
+                                         char*           coverageMissedFileLowRes,
                                          char*           coverageColourFile,
                                          char*           coverageHistogramFile,
                                          char*           coverageRawFile,
@@ -74,6 +75,7 @@ private:
     void PlotTrackLog( TrackHistory::TrackLog& log,
                        char*                   floorPlanFile,
                        char*                   trackerResultsImgFile );
+
 
 
     Ui::PostProcessWidget* m_ui;
