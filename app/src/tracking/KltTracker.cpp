@@ -746,18 +746,45 @@ void KltTracker::InitialiseRecoverySystem()
  **/
 void KltTracker::LossRecovery()
 {
-  
+
     InitialiseRecoverySystem();
     cvAbsDiff(m_currImg, m_prevImg, m_diff);
     cvThreshold(m_diff, m_diff, 15, 255, CV_THRESH_BINARY);
-          
+    int i,j;
     cvSetZero(m_filtered);
     OpenCvUtility::MotionFilter(m_diff, m_filtered, 24, 24);
     cvConvertScale(m_filtered, m_avg, 1, 0.0);
     // Search for target in the mask region using cross-correlation
     cvThreshold(m_avg, m_avg, 200, 255, CV_THRESH_BINARY);
     // Look for target in search zone.
-    TargetSearch( m_avg );
+    IplImage* avg_copy = cvCreateImage(cvSize(m_avg->width, m_avg->height) ,m_avg->depth,m_avg->nChannels);
+    int w = 100;
+
+
+    CvMat* mask;
+    mask = cvCreateMat( m_avg->width, m_avg->height,CV_8U);
+    cvSetZero(mask);
+
+    cvCopy(m_avg,avg_copy);
+
+
+    for(i=0;i< avg_copy->width;i++)
+    {
+        for(j=0;j< avg_copy->height;j++)
+        {
+            if(sqrt(pow(fabs(i - cvFloor(m_pos.x)),2) + pow(fabs(j - cvFloor(m_pos.y)),2)) > w )
+            {
+                //LOG_INFO(QObject::tr("located at %1 %2. of %3 %4").arg(cvFloor(m_pos.x)).arg(cvFloor(m_pos.x)).arg(avg_copy->width).arg(avg_copy->height));
+                cvSetReal2D(avg_copy, j, i, 0);
+            }
+        }
+    }
+
+    cvSaveImage("/home/npellejero/Documents/avg_copy.png",avg_copy);
+    cvSaveImage("/home/npellejero/Documents/m_currImg.png",m_currImg);
+
+
+    TargetSearch( avg_copy );
 
     IplImage* colImg = cvCreateImage( cvSize( m_currImg->width, m_currImg->height ), IPL_DEPTH_8U, 3 );
     cvCvtColor( m_currImg, colImg, CV_GRAY2RGB );
@@ -785,10 +812,11 @@ void KltTracker::TargetSearch( const IplImage* mask )
     int fStep = ncc->widthStep / sizeof(float);
     int iStep = mask->widthStep;
 
+
     float maxVal = -1.f;    
     
     CvPoint2D32f maxPos;
-  
+
     //Correct m_pos when lost near the limits of the window due to offsets.
     //Otherwise it get in a state where ncc2 returns 0 and lossRecovery never
     float x_lost = std::min( std::max(float(ws/2), m_pos.x) , float(m_appearanceImg->width-ws/2));

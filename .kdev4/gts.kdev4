@@ -1,0 +1,50 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x06\x00g\x00t\x00s)
+
+[CMake]
+Build Directory Count=2
+Current Build Directory Index=0
+ProjectRootRelative=./
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=file:///home/npellejero/wrk/gts/build_debug/
+Build Type=Debug
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=file:///home/npellejero/wrk/gts/install_debug
+
+[CMake][CMake Build Directory 1]
+Build Directory Path=file:///home/npellejero/wrk/gts/build
+Build Type=Release
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=file:///home/npellejero/wrk/gts/install
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=gts
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x03\x00\x00\x00\x06\x00g\x00t\x00s\x00\x00\x00\x06\x00a\x00p\x00p\x00\x00\x00\x06\x00g\x00t\x00s)
+Dependency Action=Build
+EnvironmentGroup=default
+Executable=file:///home/npellejero/wrk/gts/build_debug/bin/gts
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=gts,app,gts
+Use External Terminal=false
+Working Directory=
+isExecutable=true
+
+[MakeBuilder]
+Number Of Jobs=4
+
+[Project]
+VersionControlSupport=kdevgit
