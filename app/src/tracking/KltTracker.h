@@ -124,7 +124,7 @@ public:
 
 private:
     bool HasFlipped( float angle, float oldAngle, float threshold );
-    void SaveResult( const CvPoint2D32f& pos, const float angle, const float error );
+    void SaveResult( CvPoint2D32f& pos, const float angle, const float error );
 
     void SetLost()
     {

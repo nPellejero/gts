@@ -274,7 +274,7 @@ bool KltTracker::Track( double timestampInMillisecs, bool flipCorrect, bool init
                             &m_error,
                             cvTermCriteria( CV_TERMCRIT_ITER | CV_TERMCRIT_EPS, 20, 0.03 ),
                             kltFlags );
-
+    LOG_INFO(QObject::tr(" 277 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
     if ( found && TrackStage2( newPos, flipCorrect, false ) )
     {
         float ncc = GetError();
@@ -299,13 +299,17 @@ bool KltTracker::Track( double timestampInMillisecs, bool flipCorrect, bool init
 
         // Read the warp gradient magnitude at the tracked position to store in TrackEntry for later use.
         const CvMat* wgi = m_cal->GetWarpGradientImage();
-        int x = static_cast<int>( m_pos.x + .5f );
-        int y = static_cast<int>( m_pos.y + .5f );
+        int x = static_cast<int>( m_pos.x );
+        int y = static_cast<int>( m_pos.y );
         float warpGradient = TrackEntry::unknownWgm;
-        if ( ( x < wgi->cols ) && ( y < wgi->rows ) ) ///@todo Need to investigate why we sometimes access beyond the edge of wgi image.
+
+        if ( ( x < wgi->cols ) && ( y < wgi->rows ) )//&& x > 0 && y > 0) ///@todo Need to investigate why we sometimes access beyond the edge of wgi image.
         {
+                //assert( (unsigned)(row) < (unsigned)(mat).rows && (unsigned)(col) < (unsigned)(mat).cols );
+            LOG_INFO(QObject::tr(" 309 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
             warpGradient = CV_MAT_ELEM( *wgi, float, y, x );
         }
+
 
         // If we found a good track and the 2nd stage was a success then store the result
        // const float error = GetError();
@@ -361,7 +365,7 @@ bool KltTracker::TrackStage2( CvPoint2D32f newPos, bool flipCorrect, bool init )
     char found1 = 0;
     char found2 = 0;
     m_pos = newPos;
-
+    LOG_INFO(QObject::tr(" 309 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
     float oldAngle = m_angle;
     float newAngle = ComputeHeading( m_pos );
 
@@ -394,7 +398,7 @@ bool KltTracker::TrackStage2( CvPoint2D32f newPos, bool flipCorrect, bool init )
                             &error1,
                             cvTermCriteria( CV_TERMCRIT_ITER | CV_TERMCRIT_EPS, 20, 0.03 ),
                             kltFlags );
-
+    LOG_INFO(QObject::tr(" 309 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
     // Compute tracker error using normalised-cross-correlation
     // of appearance image (at robots old position which is where the appearance was generated)
     // with current image
@@ -421,10 +425,10 @@ bool KltTracker::TrackStage2( CvPoint2D32f newPos, bool flipCorrect, bool init )
                             kltFlags );
 
     //cvSaveImage( "appearance2.png", m_appearanceImg );
-
+    LOG_INFO(QObject::tr(" 428 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
     // Compute tracker error using normalised-cross-correlation
     float ncc2 = CrossCorrelation::Ncc2dRadial( m_appearanceImg, m_currImg, m_pos.x, m_pos.y, newPos2.x, newPos2.y, 2 * r, 2 * r );
-    
+    LOG_INFO(QObject::tr(" 431 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
     int appearanceModelChosen = 0;
     if (found1)
     {
@@ -471,10 +475,10 @@ bool KltTracker::TrackStage2( CvPoint2D32f newPos, bool flipCorrect, bool init )
         }
 
         m_angle += m_metrics->GetTargetRotationRad();
-
+        LOG_INFO(QObject::tr(" 478 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
         return true;
     }
-
+    LOG_INFO(QObject::tr(" 481 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
     return false;
 }
 
@@ -806,6 +810,7 @@ void KltTracker::TargetSearch( const IplImage* mask )
     int ws = 2 * r;
     int w = mask->width;
     int h = mask->height;
+    float nccThreshRecovery = 0.1;
         
     IplImage* ncc = cvCreateImage( cvSize( w, h ), IPL_DEPTH_32F, 1 );
     cvZero( ncc );
@@ -852,7 +857,7 @@ void KltTracker::TargetSearch( const IplImage* mask )
         }
     }
     cvReleaseImage( &ncc );
-    if ( maxVal > 0.7 )
+    if ( maxVal > nccThreshRecovery )
     {
         LOG_INFO(QObject::tr("Relocalised at %1 %2 (score: %3).").arg(maxPos.x)
                                                                  .arg(maxPos.y)
@@ -883,8 +888,14 @@ bool KltTracker::HasFlipped( float angle, float oldAngle, float threshold )
     return false;
 }
 
-void KltTracker::SaveResult( const CvPoint2D32f& pos, const float angle, const float error )
+void KltTracker::SaveResult( CvPoint2D32f& pos, const float angle, const float error )
 {
+    if(pos.x < 0)
+        pos.x = 0;
+
+    if(pos.y < 0)
+        pos.y = 0;
+
     m_pos = pos;
     m_angle = angle;
     m_error = error;

@@ -137,29 +137,30 @@ void CollateResultsWidget::LoadRunsButtonClicked()
     roomsCollection.SetConfig( GetCurrentConfig() );
 
     int relevantRuns = 0;
+
     if ( (int)runsCollection.NumElements() > 0 && (int)roomsCollection.NumElements() > 0 )
     {
         tableModel = new QStandardItemModel();
         tableModel->setHorizontalHeaderItem(TABLE_COL_USE, new QStandardItem(QString("")));
         tableModel->setHorizontalHeaderItem(TABLE_COL_RUN, new QStandardItem(QString("Run")));
         tableModel->setHorizontalHeaderItem(TABLE_COL_ROOM, new QStandardItem(QString("Room")));
-
+        LOG_INFO(QObject::tr("runsCollection.NumElements: %1, roomsCollection.NumElements: %2").arg((int)runsCollection.NumElements()).arg((int)roomsCollection.NumElements()));
         for (int n = 0; n < (int)runsCollection.NumElements(); ++n)
         {
+            LOG_TRACE(QObject::tr("n: %1").arg(n));
             const WbConfig runConfig = runsCollection.ElementAt( n ).value;
             const KeyId roomId = runConfig.GetKeyValue( RunSchema::roomIdKey ).ToKeyId();
+            LOG_INFO(QObject::tr("roomId: %1, roomIdToCollate: %2").arg(roomId).arg(roomIdToCollate));
             if (roomId == roomIdToCollate)
             {
                 relevantRuns++;
             }
-            else
-            {
-                break;
-            }
+
+
             const WbConfig roomConfig = roomsCollection.ElementById( roomId );
             const QString runName = runConfig.GetKeyValue( WbDefaultKeys::displayNameKey ).ToQString();
             const QString roomName = roomConfig.GetKeyValue( WbDefaultKeys::displayNameKey ).ToQString();
-
+            LOG_TRACE("HOLA2");
             // Create check box item
             QStandardItem* item = new QStandardItem(true);
             item->setCheckable(true);
@@ -208,28 +209,31 @@ void CollateResultsWidget::AnalyseResultsButtonClicked()
 
     Collection rooms = RoomsCollection();
     rooms.SetConfig( config );
-
+    LOG_TRACE("HOLA");
     Collection runsCollection = RunsCollection();
     runsCollection.SetConfig( config );
-
+    LOG_TRACE("HOLA");
     const WbConfig roomConfig = rooms.ElementById( roomIdToCollate );
     const WbConfig roomLayoutConfig( roomConfig.GetSubConfig( RoomLayoutSchema::schemaName ) );
-
+    LOG_TRACE("HOLA");
     const QString floorPlanName( roomLayoutConfig.GetAbsoluteFileNameFor( "floor_plan.png" ) );
     const QString floorMaskName( roomLayoutConfig.GetAbsoluteFileNameFor( "floor_mask.png" ) );
     const QString totalCoverageCsvName( config.GetAbsoluteFileNameFor( "results/total_coverage.csv" ) );
     const QString totalCoverageImgName( config.GetAbsoluteFileNameFor( "results/total_coverage.png" ) );
-
+    LOG_TRACE("HOLA");
     QTemporaryFile tmpFile( QDir::tempPath() + "/files.txt");
     if (tmpFile.open())
     {
+        LOG_TRACE("HOLA");
         QTextStream fileStrm( &tmpFile );
         for (int n = 0; n < tableModel->rowCount(); ++n)
         {
+            LOG_TRACE("HOLA");
             QStandardItem* item = tableModel->item(n, TABLE_COL_USE);
 
             if ( item->checkState() == Qt::Checked )
             {
+                LOG_TRACE("HOLA");
                 QFileInfo runDir = runsCollection.ElementAt( n ).value.GetAbsoluteFileInfo();
                 QDirIterator dirIterator(runDir.absolutePath(),
                                          QDir::AllDirs | QDir::Files | QDir::NoDotAndDotDot,
@@ -237,6 +241,7 @@ void CollateResultsWidget::AnalyseResultsButtonClicked()
 
                 while (dirIterator.hasNext())
                 {
+                    LOG_TRACE("HOLA");
                     dirIterator.next();
 
                     if (dirIterator.fileInfo().isDir())
