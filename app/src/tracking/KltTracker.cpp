@@ -810,7 +810,7 @@ void KltTracker::TargetSearch( const IplImage* mask )
     int ws = 2 * r;
     int w = mask->width;
     int h = mask->height;
-    float nccThreshRecovery = 0.1;
+    float nccThreshRecovery = 0.5;
         
     IplImage* ncc = cvCreateImage( cvSize( w, h ), IPL_DEPTH_32F, 1 );
     cvZero( ncc );
