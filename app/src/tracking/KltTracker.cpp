@@ -274,7 +274,6 @@ bool KltTracker::Track( double timestampInMillisecs, bool flipCorrect, bool init
                             &m_error,
                             cvTermCriteria( CV_TERMCRIT_ITER | CV_TERMCRIT_EPS, 20, 0.03 ),
                             kltFlags );
-    LOG_INFO(QObject::tr(" 277 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
     if ( found && TrackStage2( newPos, flipCorrect, false ) )
     {
         float ncc = GetError();
@@ -303,10 +302,9 @@ bool KltTracker::Track( double timestampInMillisecs, bool flipCorrect, bool init
         int y = static_cast<int>( m_pos.y );
         float warpGradient = TrackEntry::unknownWgm;
 
-        if ( ( x < wgi->cols ) && ( y < wgi->rows ) )//&& x > 0 && y > 0) ///@todo Need to investigate why we sometimes access beyond the edge of wgi image.
+        if ( ( x < wgi->cols ) && ( y < wgi->rows ) )
         {
-                //assert( (unsigned)(row) < (unsigned)(mat).rows && (unsigned)(col) < (unsigned)(mat).cols );
-            LOG_INFO(QObject::tr(" 309 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
+
             warpGradient = CV_MAT_ELEM( *wgi, float, y, x );
         }
 
@@ -365,7 +363,7 @@ bool KltTracker::TrackStage2( CvPoint2D32f newPos, bool flipCorrect, bool init )
     char found1 = 0;
     char found2 = 0;
     m_pos = newPos;
-    LOG_INFO(QObject::tr(" 309 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
+
     float oldAngle = m_angle;
     float newAngle = ComputeHeading( m_pos );
 
@@ -398,15 +396,13 @@ bool KltTracker::TrackStage2( CvPoint2D32f newPos, bool flipCorrect, bool init )
                             &error1,
                             cvTermCriteria( CV_TERMCRIT_ITER | CV_TERMCRIT_EPS, 20, 0.03 ),
                             kltFlags );
-    LOG_INFO(QObject::tr(" 309 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
+
     // Compute tracker error using normalised-cross-correlation
     // of appearance image (at robots old position which is where the appearance was generated)
     // with current image
     float ncc1 = CrossCorrelation::Ncc2dRadial( m_appearanceImg, m_currImg, m_pos.x, m_pos.y, newPos.x, newPos.y, 2 * r, 2 * r );
     //float ncc1 = CrossCorrelation::Ncc2dRadial( m_appearanceImg, m_currImg, r, r, newPos.x, newPos.y, 2 * r, 2 * r );
     
-    
-    //cvSaveImage( "appearance1.png", m_appearanceImg );
 
     // Predict again with opposite orientation so we can disambiguate heading
     PredictTargetAppearance( newAngle, 180 );
@@ -424,11 +420,9 @@ bool KltTracker::TrackStage2( CvPoint2D32f newPos, bool flipCorrect, bool init )
                             cvTermCriteria( CV_TERMCRIT_ITER | CV_TERMCRIT_EPS, 20, 0.03 ),
                             kltFlags );
 
-    //cvSaveImage( "appearance2.png", m_appearanceImg );
-    LOG_INFO(QObject::tr(" 428 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
     // Compute tracker error using normalised-cross-correlation
     float ncc2 = CrossCorrelation::Ncc2dRadial( m_appearanceImg, m_currImg, m_pos.x, m_pos.y, newPos2.x, newPos2.y, 2 * r, 2 * r );
-    LOG_INFO(QObject::tr(" 431 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
+
     int appearanceModelChosen = 0;
     if (found1)
     {
@@ -475,10 +469,10 @@ bool KltTracker::TrackStage2( CvPoint2D32f newPos, bool flipCorrect, bool init )
         }
 
         m_angle += m_metrics->GetTargetRotationRad();
-        LOG_INFO(QObject::tr(" 478 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
+
         return true;
     }
-    LOG_INFO(QObject::tr(" 481 x: %1 y: %2 ").arg(m_pos.x).arg(m_pos.y));
+
     return false;
 }
 
@@ -784,9 +778,6 @@ void KltTracker::LossRecovery()
         }
     }
 
-    cvSaveImage("/home/npellejero/Documents/avg_copy.png",avg_copy);
-    cvSaveImage("/home/npellejero/Documents/m_currImg.png",m_currImg);
-
 
     TargetSearch( avg_copy );
 
@@ -893,8 +884,14 @@ void KltTracker::SaveResult( CvPoint2D32f& pos, const float angle, const float e
     if(pos.x < 0)
         pos.x = 0;
 
+    if(pos.x > m_currImg->width)
+        pos.x = m_currImg->width;
+
     if(pos.y < 0)
         pos.y = 0;
+
+    if(pos.y > m_currImg->height)
+        pos.y = m_currImg->height;
 
     m_pos = pos;
     m_angle = angle;
